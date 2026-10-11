@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🌹 Phoolnagar.com — Phool, Jhande & Party Decor | FREE Delivery</title>
-<meta name="description" content="Phoolnagar.com — Taaza phool, artificial flowers, Pakistan flags aur party decoration. Seedha WhatsApp par order karein!">
+<meta name="description" content="Phoolnagar.com — Taaza phool, artificial flowers, Pakistan flags aur party decoration. Dera Talk chat par seedhi baat karein — FREE delivery!">
 <meta name="theme-color" content="#e0517a">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌹</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,7 @@
   /* 🌸 Phoolnagar Theme: Floral Soft Pink + Leaf Green + Accent Gold + Pure White */
   --pink:#ffb6c1; --pink-soft:#ffe4ea; --pink-mist:#fff4f6;
   --rose:#e0517a; --rose-dark:#c73a63;
-  --green:#2e8b57; --green-dark:#246e45; --wa:#25d366;
+  --green:#2e8b57; --green-dark:#246e45;
   --gold:#ffd700; --gold-dark:#b8860b;
   --cream:#fffaf7; --white:#ffffff;
   --ink:#3d2c35; --muted:#9b7d87;
@@ -186,13 +186,12 @@ header{
 .price{font-size:1.02rem;font-weight:800;color:var(--rose)}
 .old{font-size:.72rem;color:var(--muted);text-decoration:line-through;font-weight:500}
 .card-btns{display:flex;flex-direction:column;gap:6px;margin-top:10px}
-.btn-wa{
+.btn-dera{
   display:flex;align-items:center;justify-content:center;gap:7px;width:100%;
-  background:var(--wa);color:#fff;font-weight:700;font-size:.8rem;padding:9px 10px;
-  border-radius:12px;box-shadow:0 4px 12px rgba(37,211,102,.35);transition:.2s;
+  background:linear-gradient(120deg,var(--green),#3fa76a);color:#fff;font-weight:700;font-size:.78rem;padding:9px 10px;
+  border-radius:12px;box-shadow:0 4px 12px rgba(46,139,87,.35);transition:.2s;
 }
-.btn-wa:hover{background:#1fb858;transform:translateY(-1px)}
-.btn-wa svg{width:16px;height:16px;fill:#fff;flex-shrink:0}
+.btn-dera:hover{background:var(--green-dark);transform:translateY(-1px)}
 .btn-cart{
   display:flex;align-items:center;justify-content:center;gap:6px;width:100%;
   background:var(--pink-mist);color:var(--rose);font-weight:700;font-size:.78rem;
@@ -212,7 +211,7 @@ header{
 .why-item h5{font-size:.76rem;font-weight:700;margin-top:6px}
 .why-item p{font-size:.64rem;color:var(--muted);font-weight:500;margin-top:2px}
 
-/* ============ WHATSAPP CONTACT SECTION ============ */
+/* ============ DERA TALK CONTACT SECTION ============ */
 .contact-sec{margin-top:32px}
 .contact-card{
   position:relative;overflow:hidden;border-radius:24px;color:#fff;
@@ -235,13 +234,12 @@ header{
   font-weight:800;font-size:1.05rem;margin-top:14px;letter-spacing:.05em;width:fit-content;
 }
 .contact-btns{display:flex;flex-direction:column;gap:10px}
-.btn-wa-big{
+.btn-dera-big{
   display:flex;align-items:center;justify-content:center;gap:10px;background:#fff;color:var(--green-dark);
   font-weight:800;font-size:.95rem;padding:14px 20px;border-radius:16px;
   box-shadow:0 8px 22px rgba(0,0,0,.18);transition:.2s;
 }
-.btn-wa-big:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.24)}
-.btn-wa-big svg{width:22px;height:22px;fill:#25d366;flex-shrink:0}
+.btn-dera-big:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.24)}
 .btn-call{
   display:flex;align-items:center;justify-content:center;gap:8px;
   background:rgba(255,255,255,.14);border:2px solid rgba(255,255,255,.55);color:#fff;
@@ -318,25 +316,117 @@ footer{background:linear-gradient(160deg,#4a0d22,#3d2c35);color:#fbcfe8;margin-t
 .total-main b{font-size:1.3rem;font-weight:800;color:var(--rose)}
 .btn-checkout{
   display:flex;align-items:center;justify-content:center;gap:9px;width:100%;
-  background:var(--wa);color:#fff;font-weight:800;font-size:.95rem;padding:13px;
-  border-radius:14px;box-shadow:0 6px 18px rgba(37,211,102,.4);transition:.2s;
+  background:var(--green);color:#fff;font-weight:800;font-size:.95rem;padding:13px;
+  border-radius:14px;box-shadow:0 6px 18px rgba(46,139,87,.4);transition:.2s;
 }
-.btn-checkout:hover{background:#1fb858;transform:translateY(-2px)}
-.btn-checkout svg{width:19px;height:19px;fill:#fff}
+.btn-checkout:hover{background:var(--green-dark);transform:translateY(-2px)}
 .checkout-note{font-size:.66rem;text-align:center;color:var(--muted);margin-top:8px;font-weight:500}
 
-/* ============ FLOATING WHATSAPP ============ */
-.float-wa{
-  position:fixed;bottom:18px;right:16px;z-index:150;width:58px;height:58px;
-  border-radius:999px;background:var(--wa);display:grid;place-items:center;
-  box-shadow:0 8px 26px rgba(37,211,102,.5);transition:.2s;animation:pulse 2.2s infinite;
+/* ============ DERA TALK — FLOATING BUTTON ============ */
+.float-dera{
+  position:fixed;bottom:18px;right:16px;z-index:230;height:58px;padding:0 22px;
+  border-radius:999px;background:linear-gradient(120deg,var(--green),#3fa76a);
+  color:#fff;font-weight:800;font-size:.95rem;display:flex;align-items:center;gap:9px;
+  box-shadow:0 8px 26px rgba(46,139,87,.5);transition:.2s;animation:pulse 2.2s infinite;
 }
-.float-wa:hover{transform:scale(1.1)}
-.float-wa svg{width:30px;height:30px;fill:#fff}
+.float-dera:hover{transform:scale(1.06)}
+.float-dera .fi{font-size:1.35rem}
+.float-badge{
+  position:absolute;top:-4px;right:-2px;min-width:22px;height:22px;padding:0 6px;
+  border-radius:999px;background:var(--gold);color:#6b5400;font-size:.72rem;font-weight:800;
+  display:grid;place-items:center;border:2px solid #fff;
+}
 @keyframes pulse{
-  0%{box-shadow:0 8px 26px rgba(37,211,102,.5),0 0 0 0 rgba(37,211,102,.45)}
-  70%{box-shadow:0 8px 26px rgba(37,211,102,.5),0 0 0 16px rgba(37,211,102,0)}
-  100%{box-shadow:0 8px 26px rgba(37,211,102,.5),0 0 0 0 rgba(37,211,102,0)}
+  0%{box-shadow:0 8px 26px rgba(46,139,87,.5),0 0 0 0 rgba(46,139,87,.45)}
+  70%{box-shadow:0 8px 26px rgba(46,139,87,.5),0 0 0 16px rgba(46,139,87,0)}
+  100%{box-shadow:0 8px 26px rgba(46,139,87,.5),0 0 0 0 rgba(46,139,87,0)}
+}
+
+/* ============ DERA TALK — CHAT PANEL ============ */
+.chat-wrap{
+  position:fixed;bottom:90px;right:16px;z-index:220;
+  width:min(370px,calc(100vw - 24px));height:min(540px,72vh);
+  background:var(--cream);border-radius:22px;overflow:hidden;
+  box-shadow:0 24px 70px rgba(0,0,0,.30);display:flex;flex-direction:column;
+  opacity:0;pointer-events:none;transform:translateY(16px) scale(.96);transform-origin:bottom right;
+  transition:.28s cubic-bezier(.34,1.4,.44,1);border:1px solid var(--pink-soft);
+}
+.chat-wrap.open{opacity:1;pointer-events:auto;transform:none}
+.chat-head{
+  background:linear-gradient(120deg,var(--green),#3fa76a);color:#fff;
+  padding:13px 14px;display:flex;align-items:center;gap:10px;flex-shrink:0;
+}
+.chat-ava{
+  width:42px;height:42px;border-radius:999px;background:rgba(255,255,255,.2);
+  display:grid;place-items:center;font-size:1.35rem;border:2px solid rgba(255,255,255,.5);flex-shrink:0;
+}
+.chat-head-info{flex:1;min-width:0;line-height:1.3}
+.chat-head-info b{font-size:.95rem;font-weight:800;display:block}
+.chat-head-info span{font-size:.7rem;opacity:.95;font-weight:600;display:flex;align-items:center;gap:5px}
+.chat-head-info .dot{width:8px;height:8px;border-radius:999px;background:#b6ffce;display:inline-block;animation:blink 1.6s infinite;flex-shrink:0}
+@keyframes blink{50%{opacity:.35}}
+.chat-close{
+  width:32px;height:32px;border-radius:10px;background:rgba(255,255,255,.18);
+  color:#fff;font-size:.95rem;display:grid;place-items:center;transition:.2s;flex-shrink:0;
+}
+.chat-close:hover{background:rgba(255,255,255,.34);transform:rotate(90deg)}
+.chat-body{
+  flex:1;overflow-y:auto;padding:14px 12px;display:flex;flex-direction:column;gap:9px;
+  background:linear-gradient(180deg,#fff4f6,#fffaf7 30%);
+}
+.chat-msg{
+  max-width:84%;padding:9px 13px;border-radius:16px;font-size:.82rem;line-height:1.5;
+  font-weight:500;white-space:pre-line;animation:msgin .25s ease;box-shadow:0 2px 8px rgba(0,0,0,.06);
+}
+@keyframes msgin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.chat-msg.bot{background:#fff;color:var(--ink);border-bottom-left-radius:6px;align-self:flex-start;border:1px solid var(--pink-soft)}
+.chat-msg.user{background:linear-gradient(120deg,var(--green),#3fa76a);color:#fff;border-bottom-right-radius:6px;align-self:flex-end}
+.typing{
+  display:flex;gap:4px;padding:13px 15px;background:#fff;border:1px solid var(--pink-soft);
+  border-radius:16px;border-bottom-left-radius:6px;align-self:flex-start;width:fit-content;
+}
+.typing i{width:7px;height:7px;border-radius:999px;background:var(--muted);animation:tp 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}
+.typing i:nth-child(3){animation-delay:.3s}
+@keyframes tp{0%,100%{transform:translateY(0);opacity:.4}50%{transform:translateY(-4px);opacity:1}}
+.chat-chips{
+  display:flex;gap:7px;overflow-x:auto;padding:9px 10px;background:#fff;
+  border-top:1px solid var(--pink-soft);scrollbar-width:none;flex-shrink:0;
+}
+.chat-chips::-webkit-scrollbar{display:none}
+.chat-chip{
+  flex-shrink:0;padding:7px 13px;border-radius:999px;background:var(--pink-mist);
+  border:2px solid var(--pink-soft);font-size:.72rem;font-weight:700;color:var(--rose);transition:.2s;
+}
+.chat-chip:hover{background:var(--pink-soft);transform:translateY(-1px)}
+.chat-chip.green{background:#e7f7ee;border-color:#bfe8d0;color:var(--green)}
+.chat-input-row{display:flex;gap:8px;padding:10px;background:#fff;border-top:1px solid var(--pink-soft);flex-shrink:0}
+.chat-input{
+  flex:1;min-width:0;padding:11px 15px;border-radius:999px;border:2px solid var(--pink-soft);
+  background:var(--pink-mist);font-family:inherit;font-size:.85rem;outline:none;transition:.2s;
+}
+.chat-input:focus{border-color:var(--green);background:#fff}
+.chat-send{
+  width:44px;height:44px;border-radius:999px;background:var(--green);color:#fff;font-size:1.05rem;
+  display:grid;place-items:center;box-shadow:0 4px 14px rgba(46,139,87,.4);transition:.2s;flex-shrink:0;
+}
+.chat-send:hover{background:var(--green-dark);transform:scale(1.06)}
+.lead-card{
+  background:#fff;border:2px solid var(--pink-soft);border-radius:16px;padding:12px;
+  align-self:stretch;display:flex;flex-direction:column;gap:7px;animation:msgin .25s ease;
+}
+.lead-card b{font-size:.8rem;color:var(--ink)}
+.lead-card input,.lead-card textarea{
+  padding:9px 12px;border-radius:10px;border:2px solid var(--pink-soft);
+  font-family:inherit;font-size:.8rem;outline:none;background:var(--pink-mist);color:var(--ink);
+}
+.lead-card textarea{resize:none}
+.lead-card input:focus,.lead-card textarea:focus{border-color:var(--green);background:#fff}
+.lead-send{background:var(--green);color:#fff;font-weight:800;font-size:.8rem;padding:10px;border-radius:10px;transition:.2s}
+.lead-send:hover{background:var(--green-dark)}
+@media(max-width:640px){
+  .chat-wrap{bottom:84px;right:10px;height:min(540px,74vh)}
+  .float-dera{bottom:14px;right:12px;padding:0 18px;font-size:.88rem}
 }
 
 /* ============ TOAST ============ */
@@ -373,6 +463,8 @@ footer{background:linear-gradient(160deg,#4a0d22,#3d2c35);color:#fbcfe8;margin-t
   <a href="tel:+923001234567" id="topPhoneLink">📞 <span id="topPhone">0300-1234567</span></a>
   <span class="tb-sep">•</span>
   <span>🇵🇰 14 August Special</span>
+  <span class="tb-sep">•</span>
+  <a href="#" id="topChat">💬 Dera Talk Live Chat</a>
 </div>
 
 <!-- ============ HEADER ============ -->
@@ -476,7 +568,7 @@ footer{background:linear-gradient(160deg,#4a0d22,#3d2c35);color:#fbcfe8;margin-t
   <!-- ============ PRODUCTS ============ -->
   <section class="container" id="products" aria-label="Products">
     <h3 class="section-title" style="margin-top:30px">⭐ Featured Products</h3>
-    <p class="section-sub">Best quality, best price — WhatsApp par foran order!</p>
+    <p class="section-sub">Best quality, best price — Dera Talk chat par foran order!</p>
 
     <div class="chips" id="chips" role="tablist">
       <button class="chip on" data-cat="all">✨ Sab Kuch</button>
@@ -504,28 +596,25 @@ footer{background:linear-gradient(160deg,#4a0d22,#3d2c35);color:#fbcfe8;margin-t
       </div>
       <div class="why-item">
         <div class="ic">💬</div>
-        <h5>WhatsApp Order</h5>
-        <p>Aasan aur seedha</p>
+        <h5>Dera Talk Order</h5>
+        <p>Chat par foran jawab</p>
       </div>
     </div>
   </section>
 
-  <!-- ============ WHATSAPP CONTACT — DIRECT TALK ============ -->
-  <section class="container contact-sec" id="contact" aria-label="WhatsApp par contact karein">
+  <!-- ============ DERA TALK CONTACT — LIVE CHAT ============ -->
+  <section class="container contact-sec" id="contact" aria-label="Dera Talk par contact karein">
     <div class="contact-card">
       <span class="contact-deco">💬</span>
       <span class="contact-deco b">🌹</span>
       <div class="contact-info">
-        <span class="contact-tag">💬 DIRECT TALK</span>
-        <h3>Koi Sawal? Seedha WhatsApp Par Baat Karein!</h3>
-        <p>Order, qeemat ya delivery — jo bhi poochna ho, ek button dabao aur baat shuru! Hum foran jawab dete hain. 🌸</p>
+        <span class="contact-tag">💬 DERA TALK — LIVE CHAT</span>
+        <h3>Koi Sawal? Dera Talk Par Seedhi Baat Karein!</h3>
+        <p>Website chhodne ki zaroorat nahi! Chat box kholein, apni baat likhein — order, qeemat, delivery, sab kuch chat par. Hum online hote hi foran jawab dete hain. 🌸</p>
         <div class="contact-number">📞 <span id="contactPhone">0300-1234567</span></div>
       </div>
       <div class="contact-btns">
-        <a class="btn-wa-big" id="contactWaBtn" href="#" target="_blank" rel="noopener">
-          <svg viewBox="0 0 32 32"><path d="M16 .8C7.6.8.8 7.6.8 16c0 2.7.7 5.3 2 7.6L.7 31.3l7.9-2c2.2 1.2 4.7 1.9 7.4 1.9 8.4 0 15.2-6.8 15.2-15.2S24.4.8 16 .8zm0 27.7c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.5-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.1 5.8-12.9 12.9-12.9S28.9 8.5 28.9 15.6 23.1 28.5 16 28.5zm7.1-9.6c-.4-.2-2.3-1.1-2.6-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.3 1.5-.2.3-.5.3-.9.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.4-.6.1-.3 0-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.6-.7-.9-.7h-.7c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.2s1.4 3.7 1.5 4c.2.3 2.7 4.2 6.6 5.9.9.4 1.6.6 2.2.8.9.3 1.8.3 2.4.2.7-.1 2.3-.9 2.6-1.9.3-.9.3-1.7.2-1.9-.1-.1-.3-.2-.7-.4z"/></svg>
-          WhatsApp Par Baat Karein
-        </a>
+        <button class="btn-dera-big" id="contactChatBtn">💬 Dera Talk Chat Kholein</button>
         <a class="btn-call" id="contactCallBtn" href="tel:+923001234567">📞 Call Karein</a>
       </div>
     </div>
@@ -546,7 +635,7 @@ footer{background:linear-gradient(160deg,#4a0d22,#3d2c35);color:#fbcfe8;margin-t
         <a class="soc" href="#" aria-label="Facebook">📘</a>
         <a class="soc" href="#" aria-label="Instagram">📸</a>
         <a class="soc" href="#" aria-label="TikTok">🎵</a>
-        <a class="soc" href="#" aria-label="WhatsApp">💬</a>
+        <a class="soc" href="#" aria-label="Dera Talk">💬</a>
       </div>
     </div>
     <div>
@@ -560,7 +649,7 @@ footer{background:linear-gradient(160deg,#4a0d22,#3d2c35);color:#fbcfe8;margin-t
     <div>
       <h4>Contact</h4>
       <a id="footPhone" href="tel:+923001234567">📞 0300-1234567</a>
-      <a id="footWa" href="#" target="_blank" rel="noopener">💬 WhatsApp: 0300-1234567</a>
+      <a id="footChat" href="#">💬 Dera Talk: Chat Karein</a>
       <p>🕐 Subah 9 baje — Raat 9 baje</p>
       <p>📍 Phoolnagar, Punjab, Pakistan</p>
     </div>
@@ -591,25 +680,44 @@ footer{background:linear-gradient(160deg,#4a0d22,#3d2c35);color:#fbcfe8;margin-t
     <div class="total-row"><span>Delivery</span><span style="color:var(--green);font-weight:700">FREE 🎉</span></div>
     <div class="total-main"><span style="font-weight:700">Total:</span><b id="totalPrice">Rs 0</b></div>
     <button class="btn-checkout" id="checkoutBtn">
-      <svg viewBox="0 0 32 32"><path d="M16 .8C7.6.8.8 7.6.8 16c0 2.7.7 5.3 2 7.6L.7 31.3l7.9-2c2.2 1.2 4.7 1.9 7.4 1.9 8.4 0 15.2-6.8 15.2-15.2S24.4.8 16 .8zm0 27.7c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.5-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.1 5.8-12.9 12.9-12.9S28.9 8.5 28.9 15.6 23.1 28.5 16 28.5zm7.1-9.6c-.4-.2-2.3-1.1-2.6-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.3 1.5-.2.3-.5.3-.9.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.4-.6.1-.3 0-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.6-.7-.9-.7h-.7c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.2s1.4 3.7 1.5 4c.2.3 2.7 4.2 6.6 5.9.9.4 1.6.6 2.2.8.9.3 1.8.3 2.4.2.7-.1 2.3-.9 2.6-1.9.3-.9.3-1.7.2-1.9-.1-.1-.3-.2-.7-.4z"/></svg>
-      WhatsApp par Order Karein
+      💬 Dera Talk par Order Karein
     </button>
-    <p class="checkout-note">Order details WhatsApp par apne aap likhe hue chalein gaye ✅</p>
+    <p class="checkout-note">Order details Dera Talk chat me apne aap likhe hue chale jayenge ✅</p>
   </div>
 </aside>
 
-<!-- ============ FLOATING WHATSAPP ============ -->
-<a class="float-wa" id="floatWa" href="#" aria-label="WhatsApp par baat karein">
-  <svg viewBox="0 0 32 32"><path d="M16 .8C7.6.8.8 7.6.8 16c0 2.7.7 5.3 2 7.6L.7 31.3l7.9-2c2.2 1.2 4.7 1.9 7.4 1.9 8.4 0 15.2-6.8 15.2-15.2S24.4.8 16 .8zm0 27.7c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.5-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.1 5.8-12.9 12.9-12.9S28.9 8.5 28.9 15.6 23.1 28.5 16 28.5zm7.1-9.6c-.4-.2-2.3-1.1-2.6-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.3 1.5-.2.3-.5.3-.9.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.4-.6.1-.3 0-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.6-.7-.9-.7h-.7c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.2s1.4 3.7 1.5 4c.2.3 2.7 4.2 6.6 5.9.9.4 1.6.6 2.2.8.9.3 1.8.3 2.4.2.7-.1 2.3-.9 2.6-1.9.3-.9.3-1.7.2-1.9-.1-.1-.3-.2-.7-.4z"/></svg>
-</a>
+<!-- ============ DERA TALK — FLOATING BUTTON + CHAT PANEL ============ -->
+<button class="float-dera" id="floatDera" aria-label="Dera Talk chat kholein">
+  <span class="fi">💬</span><span>Dera Talk</span>
+  <b class="float-badge" id="floatBadge">1</b>
+</button>
+
+<div class="chat-wrap" id="chatWrap" aria-hidden="true" role="dialog" aria-label="Dera Talk chat">
+  <div class="chat-head">
+    <div class="chat-ava">🌸</div>
+    <div class="chat-head-info">
+      <b>Phoolnagar Dera</b>
+      <span><i class="dot"></i> Online — foran jawab dete hain</span>
+    </div>
+    <button class="chat-close" id="chatClose" aria-label="Chat band karein">✕</button>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-chips" id="chatChips"></div>
+  <div class="chat-input-row">
+    <input class="chat-input" id="chatInput" type="text" placeholder="Message likhein..." aria-label="Apna message likhein">
+    <button class="chat-send" id="chatSend" aria-label="Message bhejein">➤</button>
+  </div>
+</div>
 
 <div class="toast" id="toast">Cart me add ho gaya ✅</div>
 <script>
 /* ============================================================
    PHOOLNAGAR.COM — Store Code
-   ⚠️ YAHAN APNA WHATSAPP NUMBER DALO (country code ke sath, + ke baghair)
+   💬 DERA TALK = website ke andar chat! Customer wahin baat karta hai.
+   ⚠️ YAHAN APNA PHONE NUMBER DALO (country code ke sath, + ke baghair)
+   Ye number Call aur SMS ke liye use hota hai.
    ============================================================ */
-var WHATSAPP_NUMBER = '923001234567';
+var DERA_PHONE = '923001234567';
 
 /* ---------- PRODUCT DATA (qeematein PKR me) ---------- */
 var CAT_NAMES = {
@@ -669,14 +777,18 @@ function byId(id) {
 
 function money(n) { return 'Rs ' + n.toLocaleString('en-PK'); }
 
-/* ---------- WHATSAPP LINK ---------- */
-function waLink(message) {
-  return 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(message);
+/* ---------- DERA TALK: SMS / CALL LINKS ---------- */
+function smsLink(message) {
+  return 'sms:+' + DERA_PHONE + '?body=' + encodeURIComponent(message);
+}
+
+function telLink() {
+  return 'tel:+' + DERA_PHONE;
 }
 
 /* ---------- PHONE DISPLAY (0300-1234567 format) ---------- */
 function phoneDisplay() {
-  var n = WHATSAPP_NUMBER;
+  var n = DERA_PHONE;
   if (n.indexOf('92') === 0) n = '0' + n.slice(2);
   return n.slice(0, 4) + '-' + n.slice(4);
 }
@@ -684,8 +796,7 @@ function phoneDisplay() {
 /* ---------- CONTACT + TOPBAR + FOOTER LINKS (sab ek jagah se set hote hain) ---------- */
 function initContact() {
   var ph = phoneDisplay();
-  var tel = 'tel:+' + WHATSAPP_NUMBER;
-  var waMsg = waLink('Assalam-o-Alaikum! 🌹 Phoolnagar.com — mujhe order ke baare me baat karni hai. Kya aap available hain?');
+  var tel = telLink();
 
   // top bar
   var tp = document.getElementById('topPhone');
@@ -693,23 +804,15 @@ function initContact() {
   var tpl = document.getElementById('topPhoneLink');
   if (tpl) tpl.href = tel;
 
-  // contact section — DIRECT TALK buttons
+  // contact section — DERA TALK
   var cp = document.getElementById('contactPhone');
   if (cp) cp.textContent = ph;
-  var cwa = document.getElementById('contactWaBtn');
-  if (cwa) cwa.href = waMsg;
   var ccl = document.getElementById('contactCallBtn');
   if (ccl) ccl.href = tel;
 
   // footer
   var fp = document.getElementById('footPhone');
   if (fp) { fp.textContent = '📞 ' + ph; fp.href = tel; }
-  var fw = document.getElementById('footWa');
-  if (fw) { fw.textContent = '💬 WhatsApp: ' + ph; fw.href = waMsg; }
-
-  // socials ka WhatsApp icon bhi direct talk khole
-  var soc = document.querySelector('.soc[aria-label="WhatsApp"]');
-  if (soc) soc.href = waMsg;
 
   // year
   var y = document.getElementById('year');
@@ -756,9 +859,7 @@ function renderProducts() {
           '<div class="price-row"><span class="price">' + money(p.price) + '</span>' +
           '<span class="old">' + money(p.old) + '</span></div>' +
           '<div class="card-btns">' +
-            '<a class="btn-wa" href="' + waLink('Assalam-o-Alaikum! 🌹 Mujhe ye cheez chahiye:\n\n🌸 ' + p.name + '\n💰 Qeemat: ' + money(p.price) + '\n\nKya ye available hai?') + '" target="_blank" rel="noopener">' +
-              '<svg viewBox="0 0 32 32"><path d="M16 .8C7.6.8.8 7.6.8 16c0 2.7.7 5.3 2 7.6L.7 31.3l7.9-2c2.2 1.2 4.7 1.9 7.4 1.9 8.4 0 15.2-6.8 15.2-15.2S24.4.8 16 .8zm0 27.7c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.5-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.1 5.8-12.9 12.9-12.9S28.9 8.5 28.9 15.6 23.1 28.5 16 28.5zm7.1-9.6c-.4-.2-2.3-1.1-2.6-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.3 1.5-.2.3-.5.3-.9.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.4-.6.1-.3 0-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.6-.7-.9-.7h-.7c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.2s1.4 3.7 1.5 4c.2.3 2.7 4.2 6.6 5.9.9.4 1.6.6 2.2.8.9.3 1.8.3 2.4.2.7-.1 2.3-.9 2.6-1.9.3-.9.3-1.7.2-1.9-.1-.1-.3-.2-.7-.4z"/></svg>' +
-              'Order on WhatsApp</a>' +
+            '<button class="btn-dera" data-ask="' + p.id + '">💬 Dera Talk par Poochein</button>' +
             '<button class="btn-cart" data-add="' + p.id + '">🛒 Cart me Dalo</button>' +
           '</div>' +
         '</div>' +
@@ -858,7 +959,7 @@ function checkout() {
     showToast('Pehle kuch cart me dalo! 🛒');
     return;
   }
-  var msg = 'Assalam-o-Alaikum! 🌹 *Phoolnagar.com* se order karna hai:\n\n';
+  var msg = '🛒 NAYA ORDER — Phoolnagar.com\n\n';
   var n = 1;
   keys.forEach(function (k) {
     var p = byId(Number(k));
@@ -866,10 +967,14 @@ function checkout() {
     msg += n + '. ' + p.emoji + ' ' + p.name + ' × ' + cart[k] + ' — ' + money(p.price * cart[k]) + '\n';
     n++;
   });
-  msg += '\n💰 *Total: ' + money(cartTotal()) + '*';
+  msg += '\n💰 Total: ' + money(cartTotal());
   msg += '\n🚚 Delivery: FREE';
-  msg += '\n\n📦 Naam:\n📍 Address:\n📞 Phone:';
-  window.open(waLink(msg), '_blank');
+  msg += '\n\nNaam:\nAddress:\nPhone:';
+  lastMsgLink = smsLink(msg);
+  closeDrawer();
+  openChat();
+  botSay('Bohat acha! 🛒 Aap ka order taiyar hai:\n\n' + msg + '\n\n✍️ Naam, address aur number likh kar bhejein — ya "📲 SMS se Bhejein" dabayen to order seedha humare phone par chale jayega!', 700);
+  renderChips([{ t: '✍️ Naam & Address likhein', g: 1 }, { t: '📲 SMS se Bhejein' }, { t: '📞 Call Karein' }]);
 }
 
 /* ---------- SLIDESHOW ---------- */
@@ -933,10 +1038,12 @@ function filterCat(cat) {
   renderProducts();
 }
 
-// product grid clicks (add to cart)
+// product grid clicks (add to cart + Dera Talk pooch)
 document.getElementById('productGrid').addEventListener('click', function (e) {
   var btn = e.target.closest('[data-add]');
   if (btn) addToCart(Number(btn.getAttribute('data-add')));
+  var ask = e.target.closest('[data-ask]');
+  if (ask) askProduct(Number(ask.getAttribute('data-ask')));
 });
 
 // cart drawer events
@@ -967,16 +1074,246 @@ document.getElementById('drawerItems').addEventListener('click', function (e) {
   }
 });
 
-// floating WhatsApp
-document.getElementById('floatWa').addEventListener('click', function (e) {
-  e.preventDefault();
-  window.open(waLink('Assalam-o-Alaikum! 🌹 Phoolnagar.com — mujhe phoolon ke baare me maloomat chahiye.'), '_blank');
-});
+// floating Dera Talk button + chat events initDeraChat() me hote hain
+
+/* ============================================================
+   💬 DERA TALK CHAT — website ke andar live chat
+   ============================================================ */
+var chatWrap = document.getElementById('chatWrap');
+var chatBody = document.getElementById('chatBody');
+var chatChips = document.getElementById('chatChips');
+var chatInput = document.getElementById('chatInput');
+var CHAT_KEY = 'pn-dera-chat';
+var LEADS_KEY = 'pn-dera-leads';
+var chatHist = [];
+var chatOpened = false;
+var greeted = false;
+var lastMsgLink = null;
+
+try { chatHist = JSON.parse(localStorage.getItem(CHAT_KEY) || '[]'); } catch (e) { chatHist = []; }
+
+function saveChat() {
+  try { localStorage.setItem(CHAT_KEY, JSON.stringify(chatHist.slice(-60))); } catch (e) {}
+}
+
+function scrollChat() {
+  chatBody.scrollTop = chatBody.scrollHeight;
+}
+
+function addMsg(text, who, dontSave) {
+  var d = document.createElement('div');
+  d.className = 'chat-msg ' + who;
+  d.textContent = text;
+  chatBody.appendChild(d);
+  scrollChat();
+  if (!dontSave) {
+    chatHist.push({ w: who, t: text });
+    if (chatHist.length > 60) chatHist.shift();
+    saveChat();
+  }
+}
+
+function botSay(text, delay) {
+  var tp = document.createElement('div');
+  tp.className = 'typing';
+  tp.innerHTML = '<i></i><i></i><i></i>';
+  chatBody.appendChild(tp);
+  scrollChat();
+  setTimeout(function () {
+    tp.remove();
+    addMsg(text, 'bot');
+  }, delay || 900);
+}
+
+var CHIPS_DEFAULT = [
+  { t: '🌸 Order karna hai' },
+  { t: '💰 Qeemat poochein' },
+  { t: '🚚 Delivery ka pata' },
+  { t: '✍️ Message chhor dein', g: 1 }
+];
+
+function renderChips(list) {
+  chatChips.innerHTML = '';
+  (list || CHIPS_DEFAULT).forEach(function (ch) {
+    var b = document.createElement('button');
+    b.className = 'chat-chip' + (ch.g ? ' green' : '');
+    b.textContent = ch.t;
+    b.addEventListener('click', function () { handleChip(ch.t); });
+    chatChips.appendChild(b);
+  });
+}
+
+function tapLink(href) {
+  var a = document.createElement('a');
+  a.href = href;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+}
+
+function handleChip(t) {
+  if (t === '📲 SMS se Bhejein') {
+    addMsg(t, 'user');
+    tapLink(lastMsgLink || smsLink('Assalam-o-Alaikum! 🌹 Phoolnagar.com — mujhe baat karni hai.'));
+    botSay('SMS app khul gaya! 📲 Bas SEND dabayen — message seedha humare phone par jayega.', 700);
+    return;
+  }
+  if (t === '📞 Call Karein') {
+    addMsg(t, 'user');
+    tapLink(telLink());
+    botSay('Call milte hain! 📞 Subah 9 baje se raat 9 baje tak hum available hain.', 700);
+    return;
+  }
+  addMsg(t, 'user');
+  if (t === '✍️ Message chhor dein' || t === '✍️ Naam & Address likhein') {
+    showLeadForm();
+    return;
+  }
+  botReply(t);
+}
+
+function botReply(q) {
+  var s = q.toLowerCase();
+  var R;
+  if (/(qeemat|price|rate|kitn|cost)/.test(s)) {
+    R = '💰 Har product par qeemat likhi hui hai! Bulk ya shaadi ka bada order ho to ✍️ message chhor dein — special rate denge.';
+  } else if (/(order|kharid|chahiye|mangwa|lena hai)/.test(s)) {
+    R = '🛒 Zabardast! Product ke card par "Cart me Dalo" dabayen, phir upar 🛒 cart kholein aur "Dera Talk par Order Karein" dabayen. Main foran confirm kar dunga!';
+  } else if (/(deliver|pohnch|kab mil|courier|tcs)/.test(s)) {
+    R = '🚚 3 din me ghar delivery! Rs 2000+ order par FREE. Doosre shehron par TCS/RM bhej dete hain.';
+  } else if (/(phool|flower|rose|gulab|bouquet|gajra|shaadi|shadi)/.test(s)) {
+    R = '🌹 Taaza phool roz aate hain! Red Roses Bouquet sirf Rs 999, Mixed Bouquet Rs 1499. Shaadi/event booking bhi karte hain 💍';
+  } else if (/(jhanda|jhadi|jhandi|flag|azadi|14 august|14august)/.test(s)) {
+    R = '🇵🇰 14 August Special! Jhandiyan (10 flags) Rs 300, bara jhanda Rs 400, badges Rs 150. Full azadi package bhi ban jata hai!';
+  } else if (/(balloon|party|birthday|light|decor|sajawat)/.test(s)) {
+    R = '🎈 Party ka pura stock hai — balloons, banner, fairy lights ✨ Birthday package bhi banate hain. Kitne logon ki party hai?';
+  } else if (/(payment|cash|easypaisa|jazzcash)/.test(s)) {
+    R = '💵 Cash on Delivery sab se easy hai! Easypaisa/JazzCash bhi chalta hai.';
+  } else if (/(call|number|phone|rabta|contact)/.test(s)) {
+    R = '📞 Call karein: ' + phoneDisplay() + ' (Subah 9 — Raat 9). Ya apna number likh dein, hum aap ko call karenge!';
+  } else if (/(salam|assalam|hello|hey|aoa|^hi$)/.test(s)) {
+    R = 'Wa-alaikum-assalam! 🌸 Bataiye, kaunsi cheez pasand aayi hai?';
+  } else if (/(shukriya|thanks|thank|jazak)/.test(s)) {
+    R = 'Bilkul shukriya! 🌸 Phoolnagar Dera hamesha hazir hai. Khush rahen!';
+  } else {
+    R = 'Samajh gaya! 📝 Apni tafseel "✍️ Message chhor dein" se bhej dein — hum foran raabta karenge. Ya seedha call karein: ' + phoneDisplay();
+  }
+  botSay(R);
+  renderChips();
+}
+
+function showLeadForm() {
+  var old = document.getElementById('leadName');
+  if (old) return; // form pehle se khula hai
+  var card = document.createElement('div');
+  card.className = 'lead-card';
+  card.innerHTML =
+    '<b>📝 Apni tafseil likhein</b>' +
+    '<input id="leadName" placeholder="Aap ka naam" maxlength="40">' +
+    '<input id="leadPhone" placeholder="Mobile number 03xx-xxxxxxx" maxlength="15" inputmode="tel">' +
+    '<textarea id="leadMsg" rows="2" placeholder="Kya chahiye? (product, sheher, address...)" maxlength="300"></textarea>' +
+    '<button class="lead-send" id="leadSend">✅ Bhejein</button>';
+  chatBody.appendChild(card);
+  scrollChat();
+  document.getElementById('leadSend').addEventListener('click', submitLead);
+}
+
+function submitLead() {
+  var n = document.getElementById('leadName').value.trim();
+  var p = document.getElementById('leadPhone').value.trim();
+  var m = document.getElementById('leadMsg').value.trim();
+  if (!n || !p || !m) {
+    botSay('Naam, number aur message — teeno likhna zaroori hai 😊');
+    return;
+  }
+  var card = document.getElementById('leadName').closest('.lead-card');
+  if (card) card.remove();
+  addMsg('Naam: ' + n + ' | Number: ' + p + ' | Message: ' + m, 'user');
+  var leads = [];
+  try { leads = JSON.parse(localStorage.getItem(LEADS_KEY) || '[]'); } catch (e) {}
+  leads.push({ naam: n, number: p, msg: m, time: new Date().toISOString() });
+  try { localStorage.setItem(LEADS_KEY, JSON.stringify(leads)); } catch (e) {}
+  lastMsgLink = smsLink('🌸 DERA TALK MESSAGE — Phoolnagar.com\nNaam: ' + n + '\nNumber: ' + p + '\nMessage: ' + m);
+  botSay('Shukriya ' + n + '! 🌹 Aap ka message mil gaya. Hum foran raabta karenge. Foran jawab ke liye:');
+  renderChips([{ t: '📲 SMS se Bhejein', g: 1 }, { t: '📞 Call Karein' }]);
+}
+
+function askProduct(id) {
+  var p = byId(id);
+  if (!p) return;
+  openChat();
+  botSay('🌸 ' + p.name + '\n💰 Qeemat: ' + money(p.price) + (p.old ? ' (purani ' + money(p.old) + ')' : '') + '\n✅ ' + (p.st === 'low' ? 'Stock thora bacha hai — jaldi kar lein!' : 'Stock available hai!') + '\n\nOrder ke liye "Cart me Dalo" dabayen ya apna number chhor dein!', 600);
+}
+
+function openChat() {
+  chatWrap.classList.add('open');
+  chatWrap.setAttribute('aria-hidden', 'false');
+  chatOpened = true;
+  try { localStorage.setItem('pn-dera-seen', '1'); } catch (e) {}
+  var badge = document.getElementById('floatBadge');
+  if (badge) badge.style.display = 'none';
+  if (chatHist.length === 0 && !greeted) {
+    greeted = true;
+    botSay('Assalam-o-Alaikum! 🌸 Phoolnagar Dera me khush aamdeed! Main Haseeb bhai ki team se hoon — bataiye, aap ko kya chahiye?', 500);
+  }
+  renderChips();
+  setTimeout(function () { chatInput.focus(); }, 300);
+}
+
+function closeChat() {
+  chatWrap.classList.remove('open');
+  chatWrap.setAttribute('aria-hidden', 'true');
+  chatOpened = false;
+}
+
+function toggleChat() {
+  if (chatOpened) closeChat(); else openChat();
+}
+
+function sendCurrent() {
+  var v = chatInput.value.trim();
+  if (!v) return;
+  addMsg(v, 'user');
+  chatInput.value = '';
+  botReply(v);
+}
+
+function initDeraChat() {
+  // purani baatein wapis dikhao
+  if (chatHist.length > 0) {
+    chatHist.forEach(function (m) { addMsg(m.t, m.w, true); });
+  }
+  renderChips();
+  // unread badge
+  var seen = '0';
+  try { seen = localStorage.getItem('pn-dera-seen') || '0'; } catch (e) {}
+  if (seen === '1') {
+    var badge = document.getElementById('floatBadge');
+    if (badge) badge.style.display = 'none';
+  }
+  // chat ke events
+  document.getElementById('floatDera').addEventListener('click', toggleChat);
+  document.getElementById('chatClose').addEventListener('click', closeChat);
+  document.getElementById('chatSend').addEventListener('click', sendCurrent);
+  chatInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') { e.preventDefault(); sendCurrent(); }
+  });
+  // Dera Talk ke doosre buttons — sab jagah se chat khulti hai
+  var ccb = document.getElementById('contactChatBtn');
+  if (ccb) ccb.addEventListener('click', function () { openChat(); });
+  var fc = document.getElementById('footChat');
+  if (fc) fc.addEventListener('click', function (e) { e.preventDefault(); openChat(); });
+  var tc = document.getElementById('topChat');
+  if (tc) tc.addEventListener('click', function (e) { e.preventDefault(); openChat(); });
+  var soc = document.querySelector('.soc[aria-label="Dera Talk"]');
+  if (soc) soc.addEventListener('click', function (e) { e.preventDefault(); openChat(); });
+}
 
 /* ---------- INIT ---------- */
 initContact();
 renderProducts();
 renderCart();
+initDeraChat();
 </script>
 </body>
 </html>
