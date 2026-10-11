@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌹 Phoolnagar.com — Phool, Jhande & Party Decor | FREE Delivery</title>
+<meta name="description" content="Phoolnagar.com — Taaza phool, artificial flowers, Pakistan flags aur party decoration. Seedha WhatsApp par order karein!">
+<meta name="theme-color" content="#e0517a">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌹</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* 🌸 Phoolnagar Theme: Floral Soft Pink + Leaf Green + Accent Gold + Pure White */
+  --pink:#ffb6c1; --pink-soft:#ffe4ea; --pink-mist:#fff4f6;
+  --rose:#e0517a; --rose-dark:#c73a63;
+  --green:#2e8b57; --green-dark:#246e45; --wa:#25d366;
+  --gold:#ffd700; --gold-dark:#b8860b;
+  --cream:#fffaf7; --white:#ffffff;
+  --ink:#3d2c35; --muted:#9b7d87;
+  --shadow:0 6px 24px rgba(224,81,122,.10);
+  --shadow-lg:0 14px 40px rgba(224,81,122,.16);
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  background:var(--cream); color:var(--ink); line-height:1.55;
+  overflow-x:hidden;
+}
+img{max-width:100%}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+a{text-decoration:none;color:inherit}
+.container{width:min(1140px,100% - 28px);margin-inline:auto}
+
+/* ============ TOP BAR ============ */
+.topbar{
+  background:linear-gradient(90deg,var(--rose),var(--pink));color:#fff;
+  font-size:.68rem;font-weight:600;padding:6px 10px;
+  display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap;
+}
+.topbar a{color:#fff;font-weight:800}
+.tb-sep{opacity:.55}
+
+/* ============ HEADER ============ */
+header{
+  position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--pink-soft);
+}
+.nav{display:flex;align-items:center;gap:10px;padding:10px 0}
+.logo{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.logo-badge{
+  width:40px;height:40px;border-radius:13px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--rose),var(--pink));font-size:22px;
+  box-shadow:0 4px 14px rgba(224,81,122,.35);
+}
+.logo-name{font-size:1.12rem;font-weight:800;line-height:1.1;color:var(--rose)}
+.logo-name small{display:block;font-size:.6rem;font-weight:600;color:var(--muted);letter-spacing:.12em}
+.search-wrap{flex:1;position:relative;min-width:0}
+.search{
+  width:100%;padding:11px 14px 11px 40px;border-radius:999px;
+  border:2px solid var(--pink-soft);background:var(--pink-mist);
+  font-size:.9rem;font-family:inherit;color:var(--ink);outline:none;transition:.2s;
+}
+.search:focus{border-color:var(--pink);background:#fff;box-shadow:0 0 0 4px rgba(251,113,133,.12)}
+.search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:1rem;opacity:.55}
+.cart-btn{
+  position:relative;flex-shrink:0;width:44px;height:44px;border-radius:14px;
+  background:linear-gradient(135deg,var(--rose),var(--pink));color:#fff;font-size:1.15rem;
+  display:grid;place-items:center;box-shadow:0 4px 14px rgba(224,81,122,.35);transition:.2s;
+}
+.cart-btn:hover{transform:translateY(-2px)}
+.cart-count{
+  position:absolute;top:-5px;right:-5px;min-width:20px;height:20px;padding:0 5px;
+  border-radius:999px;background:var(--gold);color:#6b5400;font-size:.68rem;font-weight:800;
+  display:grid;place-items:center;border:2px solid #fff;
+}
+
+/* header category menu (desktop) */
+.nav-cats{display:none}
+@media(min-width:760px){
+  .nav-cats{display:flex;justify-content:center;gap:6px;padding:2px 0 10px}
+  .nav-cats button{
+    font-size:.78rem;font-weight:700;color:var(--ink);background:var(--pink-mist);
+    border:2px solid var(--pink-soft);padding:6px 16px;border-radius:999px;transition:.2s;
+  }
+  .nav-cats button:hover{background:var(--pink-soft);border-color:var(--pink);color:var(--rose);transform:translateY(-1px)}
+}
+
+/* ============ HERO SLIDESHOW ============ */
+.hero{padding:16px 0 6px}
+.slideshow{position:relative;height:290px;border-radius:24px;overflow:hidden;box-shadow:var(--shadow-lg)}
+.slide{
+  position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;
+  padding:26px;opacity:0;transition:opacity .8s ease;pointer-events:none;
+}
+.slide.active{opacity:1;pointer-events:auto}
+.slide-1{background:linear-gradient(120deg,#fdf2f8 0%,#fce7f3 45%,#fbcfe8 100%)}
+.slide-2{background:linear-gradient(120deg,#f0faf4 0%,#dcf2e5 45%,#b9e3cc 100%)}
+.slide-3{background:linear-gradient(120deg,#fff7ed 0%,#ffedd5 45%,#fed7aa 100%)}
+.slide-deco{position:absolute;font-size:6.5rem;opacity:.16;right:4%;bottom:-14px;transform:rotate(-12deg)}
+.slide-deco.b{font-size:3.2rem;right:34%;top:10%;opacity:.22;transform:rotate(14deg)}
+.slide-tag{
+  display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.85);
+  padding:6px 14px;border-radius:999px;font-size:.72rem;font-weight:700;
+  width:fit-content;margin-bottom:12px;backdrop-filter:blur(4px);
+}
+.slide h2{font-size:clamp(1.5rem,5.5vw,2.4rem);font-weight:800;line-height:1.15;max-width:20ch}
+.slide p{margin-top:8px;font-size:.9rem;color:var(--ink);opacity:.75;max-width:34ch;font-weight:500}
+.btn-shop{
+  margin-top:16px;display:inline-flex;align-items:center;gap:8px;width:fit-content;
+  background:var(--rose);color:#fff;font-weight:700;font-size:.9rem;
+  padding:12px 24px;border-radius:999px;box-shadow:0 8px 22px rgba(224,81,122,.4);transition:.2s;
+}
+.btn-shop:hover{transform:translateY(-2px);background:var(--rose-dark)}
+.btn-shop.green{background:var(--green);box-shadow:0 8px 22px rgba(46,139,87,.4)}
+.btn-shop.green:hover{background:var(--green-dark)}
+.hero-dots{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:7px;z-index:5}
+.hero-dots span{width:9px;height:9px;border-radius:999px;background:rgba(255,255,255,.75);cursor:pointer;transition:.3s;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.hero-dots span.on{width:26px;background:var(--rose)}
+.hero-arrow{
+  position:absolute;top:50%;transform:translateY(-50%);z-index:5;width:38px;height:38px;
+  border-radius:999px;background:rgba(255,255,255,.9);font-size:1rem;color:var(--ink);
+  display:grid;place-items:center;box-shadow:0 3px 12px rgba(0,0,0,.14);transition:.2s;
+}
+.hero-arrow:hover{background:#fff;transform:translateY(-50%) scale(1.08)}
+.hero-arrow.left{left:12px}.hero-arrow.right{right:12px}
+
+/* ============ CATEGORIES ============ */
+.section-title{font-size:1.35rem;font-weight:800;margin:26px 0 4px;display:flex;align-items:center;gap:8px}
+.section-sub{font-size:.82rem;color:var(--muted);font-weight:500;margin-bottom:16px}
+.cats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.cat{
+  position:relative;border-radius:var(--radius);overflow:hidden;background:#fff;
+  box-shadow:var(--shadow);transition:.25s;text-align:left;border:2px solid transparent;
+}
+.cat:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--pink-soft)}
+.cat-art{height:86px;display:grid;place-items:center;font-size:2.6rem;position:relative;overflow:hidden}
+.cat-art::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 70% 20%,rgba(255,255,255,.45),transparent 55%)}
+.cat.c0 .cat-art{background:linear-gradient(135deg,#fda4af,#fb7185)}
+.cat.c1 .cat-art{background:linear-gradient(135deg,#f0abfc,#c084fc)}
+.cat.c2 .cat-art{background:linear-gradient(135deg,#7fd6a4,#2e8b57)}
+.cat.c3 .cat-art{background:linear-gradient(135deg,#fdba74,#fb923c)}
+.cat-body{padding:12px 14px 14px}
+.cat h3{font-size:.95rem;font-weight:700}
+.cat p{font-size:.72rem;color:var(--muted);font-weight:500;margin-top:2px}
+.cat-go{font-size:.75rem;font-weight:700;color:var(--rose);margin-top:8px;display:inline-flex;align-items:center;gap:4px}
+
+/* ============ FILTER CHIPS ============ */
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 0 14px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{
+  flex-shrink:0;padding:8px 16px;border-radius:999px;font-size:.8rem;font-weight:600;
+  background:#fff;color:var(--ink);border:2px solid var(--pink-soft);transition:.2s;
+}
+.chip.on{background:var(--rose);color:#fff;border-color:var(--rose);box-shadow:0 4px 12px rgba(224,81,122,.3)}
+.chip:not(.on):hover{border-color:var(--pink);background:var(--pink-mist)}
+
+/* ============ PRODUCTS ============ */
+.products{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding-bottom:10px}
+.card{
+  background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);
+  transition:.25s;display:flex;flex-direction:column;border:2px solid transparent;
+}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:var(--pink-soft)}
+.card-art{
+  position:relative;height:120px;display:grid;place-items:center;font-size:3.4rem;overflow:hidden;
+}
+.card-art::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 75% 15%,rgba(255,255,255,.5),transparent 60%)}
+.off-tag{
+  position:absolute;top:8px;left:8px;z-index:2;background:var(--rose);color:#fff;
+  font-size:.62rem;font-weight:800;padding:3px 9px;border-radius:999px;letter-spacing:.03em;
+}
+.new-tag{position:absolute;top:8px;right:8px;z-index:2;background:linear-gradient(135deg,var(--gold),#f4c542);color:#6b5400;font-size:.62rem;font-weight:800;padding:3px 9px;border-radius:999px;box-shadow:0 2px 8px rgba(255,215,0,.45)}
+.card-body{padding:10px 12px 12px;display:flex;flex-direction:column;flex:1}
+.card-body h4{font-size:.83rem;font-weight:700;line-height:1.3;min-height:2.15em}
+.card-cat{font-size:.64rem;color:var(--muted);font-weight:600;margin-top:2px;text-transform:uppercase;letter-spacing:.06em}
+.meta-row{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-top:4px}
+.stars{font-size:.72rem;color:var(--gold-dark);letter-spacing:.1em;white-space:nowrap}
+.stars b{color:var(--muted);font-weight:700;font-size:.66rem;margin-left:4px;letter-spacing:0}
+.stock-pill{font-size:.58rem;font-weight:800;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.stock-pill.in{background:#e7f7ee;color:var(--green);border:1px solid #bfe8d0}
+.stock-pill.low{background:#fff6d6;color:#8a6d00;border:1px solid #f0e0a0}
+.price-row{display:flex;align-items:baseline;gap:6px;margin-top:6px}
+.price{font-size:1.02rem;font-weight:800;color:var(--rose)}
+.old{font-size:.72rem;color:var(--muted);text-decoration:line-through;font-weight:500}
+.card-btns{display:flex;flex-direction:column;gap:6px;margin-top:10px}
+.btn-wa{
+  display:flex;align-items:center;justify-content:center;gap:7px;width:100%;
+  background:var(--wa);color:#fff;font-weight:700;font-size:.8rem;padding:9px 10px;
+  border-radius:12px;box-shadow:0 4px 12px rgba(37,211,102,.35);transition:.2s;
+}
+.btn-wa:hover{background:#1fb858;transform:translateY(-1px)}
+.btn-wa svg{width:16px;height:16px;fill:#fff;flex-shrink:0}
+.btn-cart{
+  display:flex;align-items:center;justify-content:center;gap:6px;width:100%;
+  background:var(--pink-mist);color:var(--rose);font-weight:700;font-size:.78rem;
+  padding:8px;border-radius:12px;border:2px solid var(--pink-soft);transition:.2s;
+}
+.btn-cart:hover{background:var(--pink-soft);border-color:var(--pink)}
+.empty{
+  grid-column:1/-1;text-align:center;padding:44px 16px;color:var(--muted);
+  background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.empty .big{font-size:3rem;margin-bottom:8px}
+
+/* ============ WHY US ============ */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:26px 0 8px}
+.why-item{background:#fff;border-radius:16px;padding:14px 10px;text-align:center;box-shadow:var(--shadow)}
+.why-item .ic{font-size:1.7rem}
+.why-item h5{font-size:.76rem;font-weight:700;margin-top:6px}
+.why-item p{font-size:.64rem;color:var(--muted);font-weight:500;margin-top:2px}
+
+/* ============ WHATSAPP CONTACT SECTION ============ */
+.contact-sec{margin-top:32px}
+.contact-card{
+  position:relative;overflow:hidden;border-radius:24px;color:#fff;
+  background:linear-gradient(130deg,var(--green) 0%,#3fa76a 70%,#4fb877 100%);
+  padding:26px 22px;box-shadow:0 16px 44px rgba(46,139,87,.35);
+  display:flex;flex-direction:column;gap:18px;
+}
+.contact-deco{position:absolute;right:-12px;top:-30px;font-size:8.5rem;opacity:.13;transform:rotate(14deg);pointer-events:none}
+.contact-deco.b{font-size:4rem;right:36%;bottom:-16px;top:auto;transform:rotate(-10deg);opacity:.12}
+.contact-tag{
+  display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.18);
+  border:1px solid rgba(255,255,255,.35);width:fit-content;
+  padding:5px 13px;border-radius:999px;font-size:.66rem;font-weight:800;letter-spacing:.1em;
+}
+.contact-card h3{font-size:1.28rem;font-weight:800;line-height:1.3;max-width:24ch;margin-top:10px}
+.contact-card p{font-size:.85rem;opacity:.93;margin-top:6px;max-width:46ch;font-weight:500;line-height:1.65}
+.contact-number{
+  display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.32);padding:8px 16px;border-radius:999px;
+  font-weight:800;font-size:1.05rem;margin-top:14px;letter-spacing:.05em;width:fit-content;
+}
+.contact-btns{display:flex;flex-direction:column;gap:10px}
+.btn-wa-big{
+  display:flex;align-items:center;justify-content:center;gap:10px;background:#fff;color:var(--green-dark);
+  font-weight:800;font-size:.95rem;padding:14px 20px;border-radius:16px;
+  box-shadow:0 8px 22px rgba(0,0,0,.18);transition:.2s;
+}
+.btn-wa-big:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.24)}
+.btn-wa-big svg{width:22px;height:22px;fill:#25d366;flex-shrink:0}
+.btn-call{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  background:rgba(255,255,255,.14);border:2px solid rgba(255,255,255,.55);color:#fff;
+  font-weight:700;font-size:.88rem;padding:12px;border-radius:16px;transition:.2s;
+}
+.btn-call:hover{background:rgba(255,255,255,.26);transform:translateY(-2px)}
+@media(min-width:760px){
+  .contact-card{flex-direction:row;align-items:center;justify-content:space-between;padding:36px 38px;gap:28px}
+  .contact-card h3{font-size:1.5rem}
+  .contact-btns{min-width:270px}
+}
+
+/* ============ FOOTER ============ */
+footer{background:linear-gradient(160deg,#4a0d22,#3d2c35);color:#fbcfe8;margin-top:30px}
+.foot{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:34px 0 20px}
+.foot h4{font-size:.9rem;font-weight:700;color:#fff;margin-bottom:10px}
+.foot a,.foot p{display:block;font-size:.78rem;color:#f9a8c9;font-weight:500;margin-bottom:7px;transition:.2s}
+.foot a:hover{color:#fff;transform:translateX(2px)}
+.foot .about-txt{font-size:.76rem;line-height:1.7;color:#f9a8c9}
+.socials{display:flex;gap:8px;margin-top:12px}
+.soc{
+  width:38px;height:38px;border-radius:12px;background:rgba(255,255,255,.1);
+  display:grid;place-items:center;font-size:1.05rem;transition:.2s;
+}
+.soc:hover{background:var(--rose);transform:translateY(-3px)}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding:14px 0;text-align:center;font-size:.7rem;color:#e8a0bd;font-weight:500}
+.foot-bottom b{color:#fff}
+
+/* ============ CART DRAWER ============ */
+.overlay{
+  position:fixed;inset:0;background:rgba(61,44,53,.55);z-index:200;opacity:0;
+  pointer-events:none;transition:.3s;backdrop-filter:blur(3px);
+}
+.overlay.open{opacity:1;pointer-events:auto}
+.drawer{
+  position:fixed;top:0;right:0;bottom:0;width:min(400px,94vw);background:var(--cream);
+  z-index:210;transform:translateX(105%);transition:transform .35s cubic-bezier(.32,.72,.35,1);
+  display:flex;flex-direction:column;box-shadow:-10px 0 50px rgba(0,0,0,.25);
+}
+.drawer.open{transform:translateX(0)}
+.drawer-head{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px 18px;background:#fff;border-bottom:1px solid var(--pink-soft);
+}
+.drawer-head h3{font-size:1.05rem;font-weight:800;display:flex;align-items:center;gap:8px}
+.drawer-close{
+  width:36px;height:36px;border-radius:11px;background:var(--pink-mist);
+  font-size:1rem;color:var(--ink);display:grid;place-items:center;transition:.2s;
+}
+.drawer-close:hover{background:var(--pink-soft);transform:rotate(90deg)}
+.drawer-items{flex:1;overflow-y:auto;padding:14px 16px}
+.cart-empty{text-align:center;padding:50px 10px;color:var(--muted)}
+.cart-empty .big{font-size:3.4rem;margin-bottom:10px;opacity:.6}
+.c-item{
+  display:flex;gap:10px;background:#fff;border-radius:14px;padding:10px;margin-bottom:10px;
+  box-shadow:var(--shadow);align-items:center;
+}
+.c-art{width:54px;height:54px;border-radius:12px;display:grid;place-items:center;font-size:1.7rem;flex-shrink:0}
+.c-info{flex:1;min-width:0}
+.c-info h5{font-size:.8rem;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.c-info .p{font-size:.82rem;font-weight:800;color:var(--rose)}
+.qty{display:flex;align-items:center;gap:8px;margin-top:5px}
+.qty button{
+  width:26px;height:26px;border-radius:8px;background:var(--pink-soft);color:var(--rose);
+  font-weight:800;font-size:.9rem;display:grid;place-items:center;transition:.15s;
+}
+.qty button:hover{background:var(--pink);color:#fff}
+.qty span{font-size:.85rem;font-weight:700;min-width:18px;text-align:center}
+.c-del{font-size:.95rem;opacity:.45;padding:6px;transition:.2s}
+.c-del:hover{opacity:1;color:var(--rose)}
+.drawer-foot{background:#fff;border-top:1px solid var(--pink-soft);padding:14px 18px 18px}
+.total-row{display:flex;justify-content:space-between;font-size:.9rem;font-weight:600;color:var(--muted);margin-bottom:4px}
+.total-main{display:flex;justify-content:space-between;align-items:baseline;margin:8px 0 12px}
+.total-main b{font-size:1.3rem;font-weight:800;color:var(--rose)}
+.btn-checkout{
+  display:flex;align-items:center;justify-content:center;gap:9px;width:100%;
+  background:var(--wa);color:#fff;font-weight:800;font-size:.95rem;padding:13px;
+  border-radius:14px;box-shadow:0 6px 18px rgba(37,211,102,.4);transition:.2s;
+}
+.btn-checkout:hover{background:#1fb858;transform:translateY(-2px)}
+.btn-checkout svg{width:19px;height:19px;fill:#fff}
+.checkout-note{font-size:.66rem;text-align:center;color:var(--muted);margin-top:8px;font-weight:500}
+
+/* ============ FLOATING WHATSAPP ============ */
+.float-wa{
+  position:fixed;bottom:18px;right:16px;z-index:150;width:58px;height:58px;
+  border-radius:999px;background:var(--wa);display:grid;place-items:center;
+  box-shadow:0 8px 26px rgba(37,211,102,.5);transition:.2s;animation:pulse 2.2s infinite;
+}
+.float-wa:hover{transform:scale(1.1)}
+.float-wa svg{width:30px;height:30px;fill:#fff}
+@keyframes pulse{
+  0%{box-shadow:0 8px 26px rgba(37,211,102,.5),0 0 0 0 rgba(37,211,102,.45)}
+  70%{box-shadow:0 8px 26px rgba(37,211,102,.5),0 0 0 16px rgba(37,211,102,0)}
+  100%{box-shadow:0 8px 26px rgba(37,211,102,.5),0 0 0 0 rgba(37,211,102,0)}
+}
+
+/* ============ TOAST ============ */
+.toast{
+  position:fixed;bottom:88px;left:50%;transform:translateX(-50%) translateY(20px);
+  background:var(--ink);color:#fff;padding:11px 22px;border-radius:999px;font-size:.82rem;
+  font-weight:600;z-index:300;opacity:0;pointer-events:none;transition:.3s;white-space:nowrap;
+  box-shadow:0 8px 24px rgba(0,0,0,.25);
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ============ RESPONSIVE ============ */
+@media(min-width:640px){
+  .slideshow{height:320px}
+  .cats{grid-template-columns:repeat(4,1fr)}
+  .products{grid-template-columns:repeat(3,1fr)}
+  .card-art{height:150px;font-size:4rem}
+  .foot{grid-template-columns:1.4fr 1fr 1fr 1fr}
+}
+@media(min-width:960px){
+  .products{grid-template-columns:repeat(4,1fr)}
+  .slideshow{height:360px}
+  .cats{gap:16px}
+  .products{gap:16px}
+  .section-title{font-size:1.6rem}
+}
+</style>
+</head>
+<body>
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  <span>🚚 3 Din Me Home Delivery</span>
+  <span class="tb-sep">•</span>
+  <a href="tel:+923001234567" id="topPhoneLink">📞 <span id="topPhone">0300-1234567</span></a>
+  <span class="tb-sep">•</span>
+  <span>🇵🇰 14 August Special</span>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="container nav">
+    <a class="logo" href="#">
+      <div class="logo-badge">🌹</div>
+      <div class="logo-name">Phoolnagar<small>.COM • PHOOL GHAR</small></div>
+    </a>
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input class="search" id="searchInput" type="search" placeholder="Phool, jhande, balloons dhoondein..." aria-label="Products search karein">
+    </div>
+    <button class="cart-btn" id="cartBtn" aria-label="Cart kholein">
+      🛒<span class="cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+  <nav class="nav-cats container" aria-label="Categories menu">
+    <button data-nav="fresh">🌹 Asli Phool</button>
+    <button data-nav="artificial">🌸 Nakli Phool</button>
+    <button data-nav="flags">🇵🇰 Jhande &amp; Jhandiyan</button>
+    <button data-nav="party">🎈 Party &amp; Decor</button>
+  </nav>
+</header>
+
+<main>
+  <!-- ============ HERO SLIDESHOW ============ -->
+  <section class="hero container" aria-label="Aaj ke deals">
+    <div class="slideshow" id="slideshow">
+
+      <div class="slide slide-1 active">
+        <span class="slide-deco">🌹</span><span class="slide-deco b">💐</span>
+        <span class="slide-tag">🌹 FRESH AAJ KA DEAL</span>
+        <h2>Fresh Roses &amp; Bouquets</h2>
+        <p>Har khushi ke liye taaza phool — 3 din me ghar delivery! 🚚 Birthday, shaadi ya koi surprise ho!</p>
+        <a class="btn-shop" href="#products">Abhi Khareedein →</a>
+      </div>
+
+      <div class="slide slide-2">
+        <span class="slide-deco">🇵🇰</span><span class="slide-deco b">🚩</span>
+        <span class="slide-tag">🇵🇰 14 AUGUST SPECIAL</span>
+        <h2>Jhandiyaan &amp; Pakistan Flags</h2>
+        <p>Azadi ki tayari! Har size ke jhande, bunting jhandiyan aur badges.</p>
+        <a class="btn-shop green" href="#products">Jhande Dekhein →</a>
+      </div>
+
+      <div class="slide slide-3">
+        <span class="slide-deco">🏡</span><span class="slide-deco b">🌸</span>
+        <span class="slide-tag">🏡 HOME DECOR</span>
+        <h2>Artificial Flowers &amp; Decor</h2>
+        <p>Ghar ko sajao — silk roses, vases, wall vines aur party decor!</p>
+        <a class="btn-shop" href="#products">Decor Dekhein →</a>
+      </div>
+
+      <button class="hero-arrow left" id="prevSlide" aria-label="Pichla slide">❮</button>
+      <button class="hero-arrow right" id="nextSlide" aria-label="Agla slide">❯</button>
+      <div class="hero-dots" id="heroDots"></div>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORIES ============ -->
+  <section class="container" aria-label="Categories">
+    <h3 class="section-title">🛍️ Categories</h3>
+    <p class="section-sub">Jo chahiye, ek tap me dhoondein</p>
+    <div class="cats" id="cats">
+      <button class="cat c0" data-cat="fresh">
+        <div class="cat-art">🌹</div>
+        <div class="cat-body">
+          <h3>Asli Phool</h3>
+          <p>Bouquets, roses, event booking</p>
+          <span class="cat-go">Dekhein →</span>
+        </div>
+      </button>
+      <button class="cat c1" data-cat="artificial">
+        <div class="cat-art">🌸</div>
+        <div class="cat-body">
+          <h3>Nakli Phool</h3>
+          <p>Silk roses, vases, wall vines</p>
+          <span class="cat-go">Dekhein →</span>
+        </div>
+      </button>
+      <button class="cat c2" data-cat="flags">
+        <div class="cat-art">🇵🇰</div>
+        <div class="cat-body">
+          <h3>Jhande &amp; Jhandiyan</h3>
+          <p>Pakistan flags, badges, lights</p>
+          <span class="cat-go">Dekhein →</span>
+        </div>
+      </button>
+      <button class="cat c3" data-cat="party">
+        <div class="cat-art">🎈</div>
+        <div class="cat-body">
+          <h3>Party &amp; Home Decor</h3>
+          <p>Balloons, banners, fairy lights</p>
+          <span class="cat-go">Dekhein →</span>
+        </div>
+      </button>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section class="container" id="products" aria-label="Products">
+    <h3 class="section-title" style="margin-top:30px">⭐ Featured Products</h3>
+    <p class="section-sub">Best quality, best price — WhatsApp par foran order!</p>
+
+    <div class="chips" id="chips" role="tablist">
+      <button class="chip on" data-cat="all">✨ Sab Kuch</button>
+      <button class="chip" data-cat="fresh">🌹 Asli Phool</button>
+      <button class="chip" data-cat="artificial">🌸 Nakli Phool</button>
+      <button class="chip" data-cat="flags">🇵🇰 Jhande &amp; Jhandiyan</button>
+      <button class="chip" data-cat="party">🎈 Party &amp; Decor</button>
+    </div>
+
+    <div class="products" id="productGrid"></div>
+  </section>
+
+  <!-- ============ WHY US ============ -->
+  <section class="container" aria-label="Humari khaas baatein">
+    <div class="why">
+      <div class="why-item">
+        <div class="ic">🚚</div>
+        <h5>Fast Delivery</h5>
+        <p>Shehar ke andar foran</p>
+      </div>
+      <div class="why-item">
+        <div class="ic">🌹</div>
+        <h5>100% Fresh</h5>
+        <p>Taaza phool ki guarantee</p>
+      </div>
+      <div class="why-item">
+        <div class="ic">💬</div>
+        <h5>WhatsApp Order</h5>
+        <p>Aasan aur seedha</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHATSAPP CONTACT — DIRECT TALK ============ -->
+  <section class="container contact-sec" id="contact" aria-label="WhatsApp par contact karein">
+    <div class="contact-card">
+      <span class="contact-deco">💬</span>
+      <span class="contact-deco b">🌹</span>
+      <div class="contact-info">
+        <span class="contact-tag">💬 DIRECT TALK</span>
+        <h3>Koi Sawal? Seedha WhatsApp Par Baat Karein!</h3>
+        <p>Order, qeemat ya delivery — jo bhi poochna ho, ek button dabao aur baat shuru! Hum foran jawab dete hain. 🌸</p>
+        <div class="contact-number">📞 <span id="contactPhone">0300-1234567</span></div>
+      </div>
+      <div class="contact-btns">
+        <a class="btn-wa-big" id="contactWaBtn" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 32 32"><path d="M16 .8C7.6.8.8 7.6.8 16c0 2.7.7 5.3 2 7.6L.7 31.3l7.9-2c2.2 1.2 4.7 1.9 7.4 1.9 8.4 0 15.2-6.8 15.2-15.2S24.4.8 16 .8zm0 27.7c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.5-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.1 5.8-12.9 12.9-12.9S28.9 8.5 28.9 15.6 23.1 28.5 16 28.5zm7.1-9.6c-.4-.2-2.3-1.1-2.6-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.3 1.5-.2.3-.5.3-.9.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.4-.6.1-.3 0-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.6-.7-.9-.7h-.7c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.2s1.4 3.7 1.5 4c.2.3 2.7 4.2 6.6 5.9.9.4 1.6.6 2.2.8.9.3 1.8.3 2.4.2.7-.1 2.3-.9 2.6-1.9.3-.9.3-1.7.2-1.9-.1-.1-.3-.2-.7-.4z"/></svg>
+          WhatsApp Par Baat Karein
+        </a>
+        <a class="btn-call" id="contactCallBtn" href="tel:+923001234567">📞 Call Karein</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container foot">
+    <div>
+      <h4>🌹 Phoolnagar.com</h4>
+      <p class="about-txt">
+        Phoolnagar — phoolon ka shehar! Hum aapko taaza phool, artificial
+        decor, national flags aur party items ghar tak pohnchate hain.
+        Quality pakki, qeemat kam, pyar bohat saara. 💐
+      </p>
+      <div class="socials">
+        <a class="soc" href="#" aria-label="Facebook">📘</a>
+        <a class="soc" href="#" aria-label="Instagram">📸</a>
+        <a class="soc" href="#" aria-label="TikTok">🎵</a>
+        <a class="soc" href="#" aria-label="WhatsApp">💬</a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#products">✨ Sab Products</a>
+      <a href="#products">🌹 Asli Phool</a>
+      <a href="#products">🌸 Nakli Phool</a>
+      <a href="#products">🇵🇰 Jhande &amp; Jhandiyan</a>
+      <a href="#products">🎈 Party Decor</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a id="footPhone" href="tel:+923001234567">📞 0300-1234567</a>
+      <a id="footWa" href="#" target="_blank" rel="noopener">💬 WhatsApp: 0300-1234567</a>
+      <p>🕐 Subah 9 baje — Raat 9 baje</p>
+      <p>📍 Phoolnagar, Punjab, Pakistan</p>
+    </div>
+    <div>
+      <h4>Delivery &amp; Policies</h4>
+      <p>🚚 3 din me home delivery</p>
+      <p>🎁 Rs 2000+ order par FREE delivery</p>
+      <p>💵 Cash on Delivery available</p>
+      <p>🌹 100% freshness guarantee</p>
+      <p>🔄 24 ghante me complaint par exchange</p>
+    </div>
+  </div>
+  <div class="foot-bottom container">
+    Made with ❤️ by <b>Haseeb Ahmad</b> • © <span id="year">2025</span> <b>Phoolnagar.com</b> — All rights reserved
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart">
+  <div class="drawer-head">
+    <h3>🛒 Aapka Cart</h3>
+    <button class="drawer-close" id="drawerClose" aria-label="Cart band karein">✕</button>
+  </div>
+  <div class="drawer-items" id="drawerItems"></div>
+  <div class="drawer-foot">
+    <div class="total-row"><span>Items</span><span id="totalItems">0</span></div>
+    <div class="total-row"><span>Delivery</span><span style="color:var(--green);font-weight:700">FREE 🎉</span></div>
+    <div class="total-main"><span style="font-weight:700">Total:</span><b id="totalPrice">Rs 0</b></div>
+    <button class="btn-checkout" id="checkoutBtn">
+      <svg viewBox="0 0 32 32"><path d="M16 .8C7.6.8.8 7.6.8 16c0 2.7.7 5.3 2 7.6L.7 31.3l7.9-2c2.2 1.2 4.7 1.9 7.4 1.9 8.4 0 15.2-6.8 15.2-15.2S24.4.8 16 .8zm0 27.7c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.5-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.1 5.8-12.9 12.9-12.9S28.9 8.5 28.9 15.6 23.1 28.5 16 28.5zm7.1-9.6c-.4-.2-2.3-1.1-2.6-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.3 1.5-.2.3-.5.3-.9.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.4-.6.1-.3 0-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.6-.7-.9-.7h-.7c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.2s1.4 3.7 1.5 4c.2.3 2.7 4.2 6.6 5.9.9.4 1.6.6 2.2.8.9.3 1.8.3 2.4.2.7-.1 2.3-.9 2.6-1.9.3-.9.3-1.7.2-1.9-.1-.1-.3-.2-.7-.4z"/></svg>
+      WhatsApp par Order Karein
+    </button>
+    <p class="checkout-note">Order details WhatsApp par apne aap likhe hue chalein gaye ✅</p>
+  </div>
+</aside>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a class="float-wa" id="floatWa" href="#" aria-label="WhatsApp par baat karein">
+  <svg viewBox="0 0 32 32"><path d="M16 .8C7.6.8.8 7.6.8 16c0 2.7.7 5.3 2 7.6L.7 31.3l7.9-2c2.2 1.2 4.7 1.9 7.4 1.9 8.4 0 15.2-6.8 15.2-15.2S24.4.8 16 .8zm0 27.7c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.5-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.1 5.8-12.9 12.9-12.9S28.9 8.5 28.9 15.6 23.1 28.5 16 28.5zm7.1-9.6c-.4-.2-2.3-1.1-2.6-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.3 1.5-.2.3-.5.3-.9.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.4-.6.1-.3 0-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.6-.7-.9-.7h-.7c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.2s1.4 3.7 1.5 4c.2.3 2.7 4.2 6.6 5.9.9.4 1.6.6 2.2.8.9.3 1.8.3 2.4.2.7-.1 2.3-.9 2.6-1.9.3-.9.3-1.7.2-1.9-.1-.1-.3-.2-.7-.4z"/></svg>
+</a>
+
+<div class="toast" id="toast">Cart me add ho gaya ✅</div>
+<script>
+/* ============================================================
+   PHOOLNAGAR.COM — Store Code
+   ⚠️ YAHAN APNA WHATSAPP NUMBER DALO (country code ke sath, + ke baghair)
+   ============================================================ */
+var WHATSAPP_NUMBER = '923001234567';
+
+/* ---------- PRODUCT DATA (qeematein PKR me) ---------- */
+var CAT_NAMES = {
+  fresh: '🌹 Asli Phool',
+  artificial: '🌸 Nakli Phool',
+  flags: '🇵🇰 Jhande & Jhandiyan',
+  party: '🎈 Party & Decor'
+};
+
+var PRODUCTS = [
+  // ---- Asli Phool (Fresh Flowers) ----  r = rating, st = stock ('in' ya 'low')
+  { id: 1,  name: 'Red Roses Bouquet (12 Roses)', cat: 'fresh', price: 999,  old: 1299, r: 4.9, st: 'in',  emoji: '🌹', bg: 'linear-gradient(135deg,#fecdd3,#fda4af)', tag: 'off' },
+  { id: 2,  name: 'Mixed Flowers Bouquet',        cat: 'fresh', price: 1499, old: 1899, r: 4.8, st: 'in',  emoji: '💐', bg: 'linear-gradient(135deg,#fbcfe8,#f9a8d4)', tag: 'hot' },
+  { id: 3,  name: 'Sunflower Bouquet',            cat: 'fresh', price: 850,  old: 1100, r: 4.7, st: 'low', emoji: '🌻', bg: 'linear-gradient(135deg,#fde68a,#fcd34d)', tag: 'off' },
+  { id: 4,  name: 'Birthday Surprise Box',        cat: 'fresh', price: 2499, old: 2999, r: 5.0, st: 'in',  emoji: '🎁', bg: 'linear-gradient(135deg,#fda4af,#f472b6)', tag: 'hot' },
+  { id: 5,  name: 'Wedding / Event Flower Booking', cat: 'fresh', price: 15000, old: 20000, r: 4.9, st: 'in', emoji: '💍', bg: 'linear-gradient(135deg,#f9a8d4,#c084fc)', tag: 'off' },
+
+  // ---- Nakli Phool (Artificial Flowers) ----
+  { id: 6,  name: 'Silk Rose Flower Vase',        cat: 'artificial', price: 850,  old: 1100, r: 4.7, st: 'in',  emoji: '🌺', bg: 'linear-gradient(135deg,#e9d5ff,#d8b4fe)', tag: 'off' },
+  { id: 7,  name: 'Velvet Flower Vase (Premium)', cat: 'artificial', price: 1299, old: 1699, r: 4.8, st: 'in',  emoji: '🏺', bg: 'linear-gradient(135deg,#d8b4fe,#a78bfa)', tag: 'hot' },
+  { id: 8,  name: 'Wall Hanging Vines (6 ft)',    cat: 'artificial', price: 650,  old: 900,  r: 4.6, st: 'in',  emoji: '🌿', bg: 'linear-gradient(135deg,#bbf7d0,#86efac)', tag: 'off' },
+  { id: 9,  name: 'Flower Pot Set (3 Pieces)',    cat: 'artificial', price: 1799, old: 2200, r: 4.7, st: 'low', emoji: '🪴', bg: 'linear-gradient(135deg,#fbcfe8,#f0abfc)', tag: '' },
+  { id: 10, name: 'Artificial Bonsai Tree',       cat: 'artificial', price: 2299, old: 2800, r: 4.8, st: 'in',  emoji: '🌳', bg: 'linear-gradient(135deg,#a7f3d0,#6ee7b7)', tag: 'off' },
+
+  // ---- Jhande & Jhandiyan (Flags) ----
+  { id: 11, name: 'Pakistan Flag 3×2 ft',         cat: 'flags', price: 400, old: 550, r: 5.0, st: 'in',  emoji: '🇵🇰', bg: 'linear-gradient(135deg,#bbf7d0,#4ade80)', tag: 'hot' },
+  { id: 12, name: 'Pakistan Flag 2×3 ft',         cat: 'flags', price: 250, old: 350, r: 4.9, st: 'in',  emoji: '🚩', bg: 'linear-gradient(135deg,#a7f3d0,#34d399)', tag: 'off' },
+  { id: 13, name: 'Jhandiyan Bunting (10 Flags)', cat: 'flags', price: 300, old: 400, r: 4.8, st: 'in',  emoji: '🎏', bg: 'linear-gradient(135deg,#86efac,#22c55e)', tag: 'hot' },
+  { id: 14, name: 'Azadi Badges Pack (12 pcs)',   cat: 'flags', price: 150, old: 220, r: 4.7, st: 'low', emoji: '🎖️', bg: 'linear-gradient(135deg,#d1fae5,#6ee7b7)', tag: 'off' },
+  { id: 15, name: 'Event Lights & Banner Set',    cat: 'flags', price: 950, old: 1250, r: 4.8, st: 'in', emoji: '💡', bg: 'linear-gradient(135deg,#fde68a,#fbbf24)', tag: '' },
+
+  // ---- Party & Home Decor ----
+  { id: 16, name: 'Balloons Pack (50 pcs)',       cat: 'party', price: 350, old: 480, r: 4.7, st: 'in',  emoji: '🎈', bg: 'linear-gradient(135deg,#fecaca,#fca5a5)', tag: 'hot' },
+  { id: 17, name: 'Foil Number Balloon (Gold)',   cat: 'party', price: 250, old: 350, r: 4.8, st: 'in',  emoji: '🌟', bg: 'linear-gradient(135deg,#fde68a,#f59e0b)', tag: 'off' },
+  { id: 18, name: 'Happy Birthday Banner',        cat: 'party', price: 200, old: 280, r: 4.6, st: 'in',  emoji: '🎂', bg: 'linear-gradient(135deg,#fbcfe8,#f472b6)', tag: '' },
+  { id: 19, name: 'Fairy Lights (10 Meter)',      cat: 'party', price: 550, old: 750, r: 4.9, st: 'in',  emoji: '✨', bg: 'linear-gradient(135deg,#fef3c7,#fcd34d)', tag: 'hot' },
+  { id: 20, name: 'Decorative Wall Clock (Floral)', cat: 'party', price: 1499, old: 1999, r: 4.7, st: 'low', emoji: '🕛', bg: 'linear-gradient(135deg,#e9d5ff,#c4b5fd)', tag: 'off' }
+];
+
+/* ---------- STATE ---------- */
+var cart = {};           // { productId: qty }
+var activeCat = 'all';
+var query = '';
+
+try {
+  cart = JSON.parse(localStorage.getItem('pn-cart') || '{}');
+} catch (e) { cart = {}; }
+
+function saveCart() {
+  try { localStorage.setItem('pn-cart', JSON.stringify(cart)); } catch (e) {}
+}
+
+function byId(id) {
+  for (var i = 0; i < PRODUCTS.length; i++) if (PRODUCTS[i].id === id) return PRODUCTS[i];
+  return null;
+}
+
+function money(n) { return 'Rs ' + n.toLocaleString('en-PK'); }
+
+/* ---------- WHATSAPP LINK ---------- */
+function waLink(message) {
+  return 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(message);
+}
+
+/* ---------- PHONE DISPLAY (0300-1234567 format) ---------- */
+function phoneDisplay() {
+  var n = WHATSAPP_NUMBER;
+  if (n.indexOf('92') === 0) n = '0' + n.slice(2);
+  return n.slice(0, 4) + '-' + n.slice(4);
+}
+
+/* ---------- CONTACT + TOPBAR + FOOTER LINKS (sab ek jagah se set hote hain) ---------- */
+function initContact() {
+  var ph = phoneDisplay();
+  var tel = 'tel:+' + WHATSAPP_NUMBER;
+  var waMsg = waLink('Assalam-o-Alaikum! 🌹 Phoolnagar.com — mujhe order ke baare me baat karni hai. Kya aap available hain?');
+
+  // top bar
+  var tp = document.getElementById('topPhone');
+  if (tp) tp.textContent = ph;
+  var tpl = document.getElementById('topPhoneLink');
+  if (tpl) tpl.href = tel;
+
+  // contact section — DIRECT TALK buttons
+  var cp = document.getElementById('contactPhone');
+  if (cp) cp.textContent = ph;
+  var cwa = document.getElementById('contactWaBtn');
+  if (cwa) cwa.href = waMsg;
+  var ccl = document.getElementById('contactCallBtn');
+  if (ccl) ccl.href = tel;
+
+  // footer
+  var fp = document.getElementById('footPhone');
+  if (fp) { fp.textContent = '📞 ' + ph; fp.href = tel; }
+  var fw = document.getElementById('footWa');
+  if (fw) { fw.textContent = '💬 WhatsApp: ' + ph; fw.href = waMsg; }
+
+  // socials ka WhatsApp icon bhi direct talk khole
+  var soc = document.querySelector('.soc[aria-label="WhatsApp"]');
+  if (soc) soc.href = waMsg;
+
+  // year
+  var y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
+}
+
+/* ---------- PRODUCT RENDER ---------- */
+function renderProducts() {
+  var grid = document.getElementById('productGrid');
+  var list = PRODUCTS.filter(function (p) {
+    var okCat = activeCat === 'all' || p.cat === activeCat;
+    var okQ = !query || p.name.toLowerCase().indexOf(query) !== -1 ||
+              CAT_NAMES[p.cat].toLowerCase().indexOf(query) !== -1;
+    return okCat && okQ;
+  });
+
+  if (list.length === 0) {
+    grid.innerHTML =
+      '<div class="empty"><div class="big">🔍</div>' +
+      '<p style="font-weight:700">Kuch nahi mila!</p>' +
+      '<p style="font-size:.8rem;margin-top:4px">Dusre lafz se dhoondein ya category badlein.</p></div>';
+    return;
+  }
+
+  var html = '';
+  list.forEach(function (p) {
+    var tagHtml = '';
+    if (p.tag === 'off') {
+      var pct = Math.round((1 - p.price / p.old) * 100);
+      tagHtml = '<span class="off-tag">' + pct + '% OFF</span>';
+    } else if (p.tag === 'hot') {
+      tagHtml = '<span class="new-tag">🔥 SALE</span>';
+    }
+    var stockHtml = p.st === 'low'
+      ? '<span class="stock-pill low">⚡ Sirf 3 bache</span>'
+      : '<span class="stock-pill in">● In Stock</span>';
+    html +=
+      '<article class="card">' +
+        '<div class="card-art" style="background:' + p.bg + '">' + tagHtml + '<span>' + p.emoji + '</span></div>' +
+        '<div class="card-body">' +
+          '<h4>' + p.name + '</h4>' +
+          '<span class="card-cat">' + CAT_NAMES[p.cat] + '</span>' +
+          '<div class="meta-row"><span class="stars">★★★★★<b>' + p.r.toFixed(1) + '</b></span>' + stockHtml + '</div>' +
+          '<div class="price-row"><span class="price">' + money(p.price) + '</span>' +
+          '<span class="old">' + money(p.old) + '</span></div>' +
+          '<div class="card-btns">' +
+            '<a class="btn-wa" href="' + waLink('Assalam-o-Alaikum! 🌹 Mujhe ye cheez chahiye:\n\n🌸 ' + p.name + '\n💰 Qeemat: ' + money(p.price) + '\n\nKya ye available hai?') + '" target="_blank" rel="noopener">' +
+              '<svg viewBox="0 0 32 32"><path d="M16 .8C7.6.8.8 7.6.8 16c0 2.7.7 5.3 2 7.6L.7 31.3l7.9-2c2.2 1.2 4.7 1.9 7.4 1.9 8.4 0 15.2-6.8 15.2-15.2S24.4.8 16 .8zm0 27.7c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.5-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.1 5.8-12.9 12.9-12.9S28.9 8.5 28.9 15.6 23.1 28.5 16 28.5zm7.1-9.6c-.4-.2-2.3-1.1-2.6-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.3 1.5-.2.3-.5.3-.9.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.4-.6.1-.3 0-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.6-.7-.9-.7h-.7c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.2s1.4 3.7 1.5 4c.2.3 2.7 4.2 6.6 5.9.9.4 1.6.6 2.2.8.9.3 1.8.3 2.4.2.7-.1 2.3-.9 2.6-1.9.3-.9.3-1.7.2-1.9-.1-.1-.3-.2-.7-.4z"/></svg>' +
+              'Order on WhatsApp</a>' +
+            '<button class="btn-cart" data-add="' + p.id + '">🛒 Cart me Dalo</button>' +
+          '</div>' +
+        '</div>' +
+      '</article>';
+  });
+  grid.innerHTML = html;
+}
+
+/* ---------- CART ---------- */
+function cartQty() {
+  var n = 0;
+  for (var k in cart) n += cart[k];
+  return n;
+}
+
+function cartTotal() {
+  var t = 0;
+  for (var k in cart) {
+    var p = byId(Number(k));
+    if (p) t += p.price * cart[k];
+  }
+  return t;
+}
+
+function updateBadge() {
+  document.getElementById('cartCount').textContent = cartQty();
+}
+
+function renderCart() {
+  var wrap = document.getElementById('drawerItems');
+  var keys = Object.keys(cart);
+  updateBadge();
+
+  if (keys.length === 0) {
+    wrap.innerHTML =
+      '<div class="cart-empty"><div class="big">🛒</div>' +
+      '<p style="font-weight:700">Cart khali hai!</p>' +
+      '<p style="font-size:.8rem;margin-top:4px">Phool chuno aur cart me dalo 🌹</p></div>';
+    document.getElementById('totalItems').textContent = '0';
+    document.getElementById('totalPrice').textContent = money(0);
+    return;
+  }
+
+  var html = '';
+  keys.forEach(function (k) {
+    var p = byId(Number(k));
+    if (!p) return;
+    html +=
+      '<div class="c-item">' +
+        '<div class="c-art" style="background:' + p.bg + '">' + p.emoji + '</div>' +
+        '<div class="c-info">' +
+          '<h5>' + p.name + '</h5>' +
+          '<span class="p">' + money(p.price) + '</span>' +
+          '<div class="qty">' +
+            '<button data-dec="' + p.id + '" aria-label="Kam karein">−</button>' +
+            '<span>' + cart[k] + '</span>' +
+            '<button data-inc="' + p.id + '" aria-label="Zyada karein">+</button>' +
+          '</div>' +
+        '</div>' +
+        '<button class="c-del" data-del="' + p.id + '" aria-label="Delete karein">🗑️</button>' +
+      '</div>';
+  });
+  wrap.innerHTML = html;
+  document.getElementById('totalItems').textContent = cartQty();
+  document.getElementById('totalPrice').textContent = money(cartTotal());
+}
+
+function addToCart(id) {
+  cart[id] = (cart[id] || 0) + 1;
+  saveCart();
+  renderCart();
+  showToast('Cart me add ho gaya ✅ ' + (byId(id) || {}).emoji);
+}
+
+function showToast(msg) {
+  var t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(showToast._t);
+  showToast._t = setTimeout(function () { t.classList.remove('show'); }, 1800);
+}
+
+function openDrawer() {
+  document.getElementById('drawer').classList.add('open');
+  document.getElementById('overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeDrawer() {
+  document.getElementById('drawer').classList.remove('open');
+  document.getElementById('overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function checkout() {
+  var keys = Object.keys(cart);
+  if (keys.length === 0) {
+    showToast('Pehle kuch cart me dalo! 🛒');
+    return;
+  }
+  var msg = 'Assalam-o-Alaikum! 🌹 *Phoolnagar.com* se order karna hai:\n\n';
+  var n = 1;
+  keys.forEach(function (k) {
+    var p = byId(Number(k));
+    if (!p) return;
+    msg += n + '. ' + p.emoji + ' ' + p.name + ' × ' + cart[k] + ' — ' + money(p.price * cart[k]) + '\n';
+    n++;
+  });
+  msg += '\n💰 *Total: ' + money(cartTotal()) + '*';
+  msg += '\n🚚 Delivery: FREE';
+  msg += '\n\n📦 Naam:\n📍 Address:\n📞 Phone:';
+  window.open(waLink(msg), '_blank');
+}
+
+/* ---------- SLIDESHOW ---------- */
+var slideIdx = 0;
+var slides = document.querySelectorAll('.slide');
+var dotsWrap = document.getElementById('heroDots');
+slides.forEach(function (_, i) {
+  var d = document.createElement('span');
+  if (i === 0) d.className = 'on';
+  d.addEventListener('click', function () { goSlide(i); });
+  dotsWrap.appendChild(d);
+});
+var dots = dotsWrap.querySelectorAll('span');
+
+function goSlide(i) {
+  slideIdx = (i + slides.length) % slides.length;
+  slides.forEach(function (s, j) { s.classList.toggle('active', j === slideIdx); });
+  dots.forEach(function (d, j) { d.classList.toggle('on', j === slideIdx); });
+}
+
+var autoSlide = setInterval(function () { goSlide(slideIdx + 1); }, 4200);
+document.getElementById('nextSlide').addEventListener('click', function () {
+  goSlide(slideIdx + 1); resetAuto();
+});
+document.getElementById('prevSlide').addEventListener('click', function () {
+  goSlide(slideIdx - 1); resetAuto();
+});
+function resetAuto() {
+  clearInterval(autoSlide);
+  autoSlide = setInterval(function () { goSlide(slideIdx + 1); }, 4200);
+}
+
+/* ---------- EVENTS ---------- */
+// search
+document.getElementById('searchInput').addEventListener('input', function (e) {
+  query = e.target.value.toLowerCase().trim();
+  renderProducts();
+});
+
+// category cards + chips + header menu
+document.querySelectorAll('.cat').forEach(function (el) {
+  el.addEventListener('click', function () {
+    filterCat(el.getAttribute('data-cat'));
+    document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+  });
+});
+document.querySelectorAll('.chip').forEach(function (el) {
+  el.addEventListener('click', function () { filterCat(el.getAttribute('data-cat')); });
+});
+document.querySelectorAll('.nav-cats button').forEach(function (el) {
+  el.addEventListener('click', function () {
+    filterCat(el.getAttribute('data-nav'));
+    document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+  });
+});
+function filterCat(cat) {
+  activeCat = cat;
+  document.querySelectorAll('.chip').forEach(function (c) {
+    c.classList.toggle('on', c.getAttribute('data-cat') === cat);
+  });
+  renderProducts();
+}
+
+// product grid clicks (add to cart)
+document.getElementById('productGrid').addEventListener('click', function (e) {
+  var btn = e.target.closest('[data-add]');
+  if (btn) addToCart(Number(btn.getAttribute('data-add')));
+});
+
+// cart drawer events
+document.getElementById('cartBtn').addEventListener('click', openDrawer);
+document.getElementById('drawerClose').addEventListener('click', closeDrawer);
+document.getElementById('overlay').addEventListener('click', closeDrawer);
+document.getElementById('checkoutBtn').addEventListener('click', checkout);
+
+document.getElementById('drawerItems').addEventListener('click', function (e) {
+  var inc = e.target.closest('[data-inc]');
+  var dec = e.target.closest('[data-dec]');
+  var del = e.target.closest('[data-del]');
+  if (inc) {
+    var idI = Number(inc.getAttribute('data-inc'));
+    cart[idI] = (cart[idI] || 0) + 1;
+    saveCart(); renderCart();
+  }
+  if (dec) {
+    var idD = Number(dec.getAttribute('data-dec'));
+    cart[idD] = (cart[idD] || 0) - 1;
+    if (cart[idD] <= 0) delete cart[idD];
+    saveCart(); renderCart();
+  }
+  if (del) {
+    var idX = Number(del.getAttribute('data-del'));
+    delete cart[idX];
+    saveCart(); renderCart();
+  }
+});
+
+// floating WhatsApp
+document.getElementById('floatWa').addEventListener('click', function (e) {
+  e.preventDefault();
+  window.open(waLink('Assalam-o-Alaikum! 🌹 Phoolnagar.com — mujhe phoolon ke baare me maloomat chahiye.'), '_blank');
+});
+
+/* ---------- INIT ---------- */
+initContact();
+renderProducts();
+renderCart();
+</script>
+</body>
+</html>

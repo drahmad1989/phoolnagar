@@ -1,0 +1,55 @@
+🌸 PHOOLNAGAR.COM WEBSITE — CLOUDFLARE HOSTING GUIDE 🌸
+========================================================
+
+STEP 1: Cloudflare Pages par website upload karein
+--------------------------------------------------
+(Tareeqa 1 — Sab se asaan: Drag & Drop)
+1. https://dash.cloudflare.com par jayen aur account banayen/login karein
+2. Left menu me "Workers & Pages" par click karein
+3. "Create application" → "Pages" → "Upload assets" par click karein
+4. Project ka naam likhein: phoolnagar (ya phoolnagar-com)
+5. index.html file ko drag karke upload karein
+6. "Deploy site" dabayen — 30 second me website LIVE! 🎉
+
+STEP 2: pholnagar.com domain connect karein
+--------------------------------------------------
+1. Cloudflare Pages me apne project ko kholein
+2. "Custom domains" tab → "Set up a custom domain"
+3. Likhein: pholnagar.com → Continue
+4. Agar domain pehle se Cloudflare par hai → ye khud hi connect ho jayega
+5. Agar domain kahin aur hai (GoDaddy waghera):
+   - Pehle domain ko Cloudflare me add karein (Add site)
+   - Nameservers change karne honge (Cloudflare 2 nameservers deta hai)
+   - Papa ki madad se ye step karein
+
+STEP 3: WhatsApp Number change karein (ZAROORI!)
+--------------------------------------------------
+1. index.html file ko Notepad / VS Code me kholein
+2. Ye line dhoondein (file ke shuru ke paas hai):
+   var WHATSAPP_NUMBER = '923001234567';
+3. 923001234567 ki jagah APNA WhatsApp number likhein
+   (92 se shuru, + ke baghair — misal: 923004567890)
+4. File save karein aur dobara upload kar dein
+
+QEEMATEIN / PRODUCTS BADALNA
+--------------------------------------------------
+- PRODUCTS list me sab items hain (naam, qeemat, emoji)
+- Naya product: ek line copy karke edit karein
+- Qeemat badalne ke liye sirf price: 999 badal dein
+
+WEBSITE KE FEATURES
+--------------------------------------------------
+✅ Top bar (delivery info + phone number)
+✅ Hero slideshow (3 deals — seasonal offers)
+✅ Header me category menu + search bar (live filtering)
+✅ 4 categories: Asli Phool, Nakli Phool, Jhande, Party Decor
+✅ 20 products — PKR qeematein + discount tags + rating stars + stock status
+✅ Cart system (save hota hai)
+✅ WhatsApp order buttons (poori list sath)
+✅ BIG WhatsApp Contact Section — DIRECT TALK button + Call button
+✅ Floating WhatsApp button (har jagah available)
+✅ Footer: About, Quick Links, Delivery Policies, Contact
+✅ Mobile friendly (phone par perfect)
+✅ Bahut fast — koi database nahi chahiye!
+
+Made by Haseeb Ahmad ❤️
