@@ -25,15 +25,16 @@ STEP 2: pholnagar.com domain connect karein
 STEP 3: APNA PHONE NUMBER DALO (ZAROORI!)
 --------------------------------------------------
 1. index.html file ko Notepad / VS Code me kholein
-2. Ye line dhoondein (file ke shuru ke paas hai):
-   var DERA_PHONE = '923001234567';
+2. Bade banner ke neeche ye line dhoondein (script ke bilkul
+   shuru me hai — file me line 727 ke aas paas):
+   var DERA_PHONE = '923001234567';   // <== YAHAN APNA NUMBER LIKHEIN
 3. 923001234567 ki jagah APNA number likhein
-   (92 se shuru, + ke baghair — misal: 923004567890)
+   (0 hatao, aage 92 laga do — misal: 0300 1234567 -> 923001234567)
 4. File save karein aur dobara upload kar dein
 
-Ye number Dera Talk chat ke "Call Karein" aur "SMS se Bhejein"
-buttons me use hota hai. Jab customer SMS bhejta hai to poora
-message (naam, number, order) aap ke phone par aa jata hai!
+YEH EK LINE BADLO — POORI SITE MEIN NUMBER UPDATE HO JAYEGA.
+(Top bar, Dera Talk chat, Call button, SMS button — sab yahi
+number use karte hain, koi dusri jagah number nahi hai)
 
 DERA TALK CHAT — KAISE CHALTA HAI?
 --------------------------------------------------
@@ -51,11 +52,23 @@ Aap tak message SMS button ke zariye pohnchta hai. Baad me agar
 real live chat chahiye (jaise WhatsApp jaisa) to tawk.to ka free
 account bana kar script add kar sakte hain — tab batayenge!
 
-QEEMATEIN / PRODUCTS BADALNA
+QEEMATEIN / PRODUCTS BADALNA (AAP KHUD KAR SAKTE HAIN)
 --------------------------------------------------
-- PRODUCTS list me sab items hain (naam, qeemat, emoji)
-- Naya product: ek line copy karke edit karein
-- Qeemat badalne ke liye sirf price: 999 badal dein
+index.html kholein — bade banner ke neeche PRODUCTS list hai.
+Har product ki line me sirf ye 4 cheezein edit karein:
+
+  price : AAJ KI QEEMAT (Rs)   <- yehi badalte raho
+  old   : PURANI QEEMAT (kati hui dikhti hai)
+  st    : 'in' = stock me hai | 'low' = thora bacha | 'out' = KHATAM
+  r     : rating (0 se 5)
+
+Misal — qeemat 999 se 1200 karni hai:
+  price: 999  ko  price: 1200  kar do. Bas!
+
+- Naya product: koi ek line copy karke edit karein (id naya rakho)
+- Product khatam? st: 'out' kar do — red "Khatam Ho Gaya"
+  dikhega aur Cart button band ho jayega
+- Naam badalna ho to sirf name: ke andar ka text badlo
 
 WEBSITE KE FEATURES
 --------------------------------------------------

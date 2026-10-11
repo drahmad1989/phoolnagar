@@ -182,6 +182,8 @@ header{
 .stock-pill{font-size:.58rem;font-weight:800;padding:2px 8px;border-radius:999px;white-space:nowrap}
 .stock-pill.in{background:#e7f7ee;color:var(--green);border:1px solid #bfe8d0}
 .stock-pill.low{background:#fff6d6;color:#8a6d00;border:1px solid #f0e0a0}
+.stock-pill.out{background:#fee2e2;color:#b91c1c;border:1px solid #fecaca}
+.btn-cart:disabled{opacity:.45;cursor:not-allowed}
 .price-row{display:flex;align-items:baseline;gap:6px;margin-top:6px}
 .price{font-size:1.02rem;font-weight:800;color:var(--rose)}
 .old{font-size:.72rem;color:var(--muted);text-decoration:line-through;font-weight:500}
@@ -712,14 +714,32 @@ footer{background:linear-gradient(160deg,#4a0d22,#3d2c35);color:#fbcfe8;margin-t
 <div class="toast" id="toast">Cart me add ho gaya ✅</div>
 <script>
 /* ============================================================
-   PHOOLNAGAR.COM — Store Code
-   💬 DERA TALK = website ke andar chat! Customer wahin baat karta hai.
-   ⚠️ YAHAN APNA PHONE NUMBER DALO (country code ke sath, + ke baghair)
-   Ye number Call aur SMS ke liye use hota hai.
-   ============================================================ */
-var DERA_PHONE = '923001234567';
+   PHOOLNAGAR.COM — STORE SETTINGS
+   ============================================================
+   DERA TALK = website ke andar chat! Customer wahin baat karta hai.
 
-/* ---------- PRODUCT DATA (qeematein PKR me) ---------- */
+   ⭐⭐⭐ APNA PHONE NUMBER YAHAN LIKHEIN ⭐⭐⭐
+   Ye EK number Call, SMS aur Dera Chat — sab jagah use hota hai.
+
+   Likhne ka tareeqa: 0 hatao, aage 92 laga do (Pakistan ka code).
+   Misal:   0300 1234567   -->   '923001234567'
+
+   YEH EK LINE BADLO — POORI SITE MEIN NUMBER UPDATE HO JAYEGA.
+   ============================================================ */
+var DERA_PHONE = '923001234567';   // <== YAHAN APNA NUMBER LIKHEIN
+
+/* ============================================================
+   ⭐⭐⭐ PRICES YAHAN SE CHANGE KAREIN ⭐⭐⭐
+   Har product ki line me aap sirf ye 4 cheezein edit karein:
+
+     price : AAJ KI QEEMAT (Rs me)   <- yehi badalte raho
+     old   : PURANI QEEMAT (kati hui dikhti hai; discount ke liye)
+     st    : 'in' = stock me hai | 'low' = thora bacha | 'out' = KHATAM
+     r     : rating (0 se 5, misal 4.5)
+
+   Baqi cheezein (id, name, cat, emoji, bg, tag) waise hi chhoren —
+   un se site ki design banati hai.
+   ============================================================ */
 var CAT_NAMES = {
   fresh: '🌹 Asli Phool',
   artificial: '🌸 Nakli Phool',
@@ -728,7 +748,7 @@ var CAT_NAMES = {
 };
 
 var PRODUCTS = [
-  // ---- Asli Phool (Fresh Flowers) ----  r = rating, st = stock ('in' ya 'low')
+  // ---- Asli Phool (Fresh Flowers) ----
   { id: 1,  name: 'Red Roses Bouquet (12 Roses)', cat: 'fresh', price: 999,  old: 1299, r: 4.9, st: 'in',  emoji: '🌹', bg: 'linear-gradient(135deg,#fecdd3,#fda4af)', tag: 'off' },
   { id: 2,  name: 'Mixed Flowers Bouquet',        cat: 'fresh', price: 1499, old: 1899, r: 4.8, st: 'in',  emoji: '💐', bg: 'linear-gradient(135deg,#fbcfe8,#f9a8d4)', tag: 'hot' },
   { id: 3,  name: 'Sunflower Bouquet',            cat: 'fresh', price: 850,  old: 1100, r: 4.7, st: 'low', emoji: '🌻', bg: 'linear-gradient(135deg,#fde68a,#fcd34d)', tag: 'off' },
@@ -848,7 +868,9 @@ function renderProducts() {
     }
     var stockHtml = p.st === 'low'
       ? '<span class="stock-pill low">⚡ Sirf 3 bache</span>'
-      : '<span class="stock-pill in">● In Stock</span>';
+      : p.st === 'out'
+        ? '<span class="stock-pill out">✕ Khatam Ho Gaya</span>'
+        : '<span class="stock-pill in">● In Stock</span>';
     html +=
       '<article class="card">' +
         '<div class="card-art" style="background:' + p.bg + '">' + tagHtml + '<span>' + p.emoji + '</span></div>' +
@@ -860,7 +882,7 @@ function renderProducts() {
           '<span class="old">' + money(p.old) + '</span></div>' +
           '<div class="card-btns">' +
             '<button class="btn-dera" data-ask="' + p.id + '">💬 Dera Talk par Poochein</button>' +
-            '<button class="btn-cart" data-add="' + p.id + '">🛒 Cart me Dalo</button>' +
+            '<button class="btn-cart" data-add="' + p.id + '"' + (p.st === 'out' ? ' disabled' : '') + '>🛒 Cart me Dalo</button>' +
           '</div>' +
         '</div>' +
       '</article>';
@@ -928,6 +950,8 @@ function renderCart() {
 }
 
 function addToCart(id) {
+  var pp = byId(id);
+  if (!pp || pp.st === 'out') { showToast('Ye item khatam ho gaya hai'); return; }
   cart[id] = (cart[id] || 0) + 1;
   saveCart();
   renderCart();
@@ -1242,7 +1266,7 @@ function askProduct(id) {
   var p = byId(id);
   if (!p) return;
   openChat();
-  botSay('🌸 ' + p.name + '\n💰 Qeemat: ' + money(p.price) + (p.old ? ' (purani ' + money(p.old) + ')' : '') + '\n✅ ' + (p.st === 'low' ? 'Stock thora bacha hai — jaldi kar lein!' : 'Stock available hai!') + '\n\nOrder ke liye "Cart me Dalo" dabayen ya apna number chhor dein!', 600);
+  botSay('🌸 ' + p.name + '\n💰 Qeemat: ' + money(p.price) + (p.old ? ' (purani ' + money(p.old) + ')' : '') + '\n✅ ' + (p.st === 'out' ? 'Ye item filhal khatam hai — baad me pooch lein!' : p.st === 'low' ? 'Stock thora bacha hai — jaldi kar lein!' : 'Stock available hai!') + '\n\nOrder ke liye "Cart me Dalo" dabayen ya apna number chhor dein!', 600);
 }
 
 function openChat() {
